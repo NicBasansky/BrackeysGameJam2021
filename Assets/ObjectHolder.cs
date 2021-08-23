@@ -154,9 +154,7 @@ public class ObjectHolder : MonoBehaviour
     {
         currentThrust = throwingPercent * maxThrowingForce * 1000; // to convert into KiloNewtons
         throwingVector = mainCamera.transform.forward * currentThrust;
-        isThrowing = true;
-        
-
+        isThrowing = true;       
     }
     
     public void BreakConnection()
@@ -169,17 +167,13 @@ public class ObjectHolder : MonoBehaviour
 
     private void PickupObject()
     {
-        // GetComp in Children?
+
         pickupObject = lookObject.GetComponent<PickupObject>();
         currentlyPickedUpObject = lookObject;
         pickupRB = currentlyPickedUpObject.GetComponent<Rigidbody>();
         pickupRB.constraints = RigidbodyConstraints.FreezeRotation; // TODO necessary?
         pickupObject.objectHolder = this;
-
-        throwingPercent = 0f;
-
         StartCoroutine(pickupObject.PickUp());
-
     }
 
 }
