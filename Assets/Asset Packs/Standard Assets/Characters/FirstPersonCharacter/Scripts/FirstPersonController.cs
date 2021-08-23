@@ -72,7 +72,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
             // the jump state needs to read here to make sure it is not missed
             if (!m_Jump)
             {
-                m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
+                // DISABLED JUMP to re-enable, uncomment this line
+                //m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
             }
 
             if (!m_PreviouslyGrounded && m_CharacterController.isGrounded)
@@ -107,7 +108,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private void FixedUpdate()
         {
             if (shouldFreeze) return;
-            
+
             float speed;
             GetInput(out speed);
             // always move along the camera forward as it is the direction that it being aimed at

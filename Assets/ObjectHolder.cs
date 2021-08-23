@@ -13,12 +13,26 @@ public class ObjectHolder : MonoBehaviour
     private PickupObject pickupObject;
     private Camera mainCamera;
 
+    [Header("Throwing Object")]
+    [SerializeField] float maxThrowingForce = 30f; // KN (kg ms^-2)
+    [Range(0, 1.0f)]
+    [SerializeField] float throwingPercent = 1.0f; // TODO set to 0, then increase as holding spacebar
+    //private Vector3 throwingUnitVector; // force direction, TODO need to declare here?
+    private float currentThrust; // N
+    private Vector3 throwingVector;
+    private bool isThrowing = false;
+    [SerializeField] float maxChargingSeconds = 3.5f;
+    private float extraThrowingPercentThisFrame = 0f;
+    private bool windUp = false;
+    private float windUpSpeed;
+    [SerializeField] Vector3 windUpPos = new Vector3(0, 0.35f, 1.5f);
+
     [Header("Pickup")]
     [SerializeField] Transform pickupParent;
     public GameObject currentlyPickedUpObject;
     private Rigidbody pickupRB;
 
-    [Header("ObjectFollow")]
+    [Header("Object Follow")]
     [SerializeField] private float minSpeed = 0;
     [SerializeField] private float maxSpeed = 300f;
     [SerializeField] private float maxDistance = 10f;
@@ -32,6 +46,8 @@ public class ObjectHolder : MonoBehaviour
     void Start()
     {
         mainCamera = Camera.main;
+        extraThrowingPercentThisFrame = (1 * Time.deltaTime) / maxChargingSeconds;
+        windUpSpeed = 1 / maxChargingSeconds;
     }
 
     // TODO see if there is a better way to do this, perhaps on clicking on something using the interactable
@@ -49,6 +65,7 @@ public class ObjectHolder : MonoBehaviour
             lookObject = null;
         }
 
+        // Inputs to pick up object
         if (Input.GetKeyDown(KeyCode.E))
         {
             // if we aren't holding anything
@@ -64,10 +81,41 @@ public class ObjectHolder : MonoBehaviour
             {
                 BreakConnection();
             }
-        } // TODO press another button, maybe SPACE to launch an object
+        } 
+
+        // Inputs to throw object
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if (currentlyPickedUpObject != null)
+            {
+                // build up the throwing percent of max throwing force, increase force bar
+                //throwingPercent += (maxChargingSeconds /)
+                InvokeRepeating("IncreaseThrowingPercent", 0.5f, Time.deltaTime);
+                windUp = true;
+            }
+        }
+        else if (Input.GetKeyUp(KeyCode.Space))
+        {
+                // Throw object, add force in the camera's forward direction
+            // add force
+            if (currentlyPickedUpObject != null)
+            {
+                CancelInvoke();
+                ExertForce();
+                BreakConnection();
+            }
+            throwingPercent = 0f;
+            windUp = false;
+        }
 
         if (currentlyPickedUpObject != null && currentDist > maxDistance)
             BreakConnection();
+
+        if (windUp)
+        {
+            pickupRB.transform.position = Vector3.Lerp(pickupRB.transform.position, mainCamera.transform.position +
+                                                    windUpPos, windUpSpeed * Time.deltaTime);
+        }
     }
 
     // velocity movement toward pickup parent and rotation
@@ -86,8 +134,30 @@ public class ObjectHolder : MonoBehaviour
             lookRotation = Quaternion.Slerp(mainCamera.transform.rotation, lookRotation, rotationSpeed * Time.fixedDeltaTime);
             pickupRB.MoveRotation(lookRotation);
         }
+
+        if (isThrowing)
+        {
+            pickupRB.AddForce(throwingVector);
+            isThrowing = false;
+        }
     }
     
+    private void IncreaseThrowingPercent()
+    {
+        if (throwingPercent < 1)
+        {
+            throwingPercent += extraThrowingPercentThisFrame;
+        }
+    }
+
+    private void ExertForce()
+    {
+        currentThrust = throwingPercent * maxThrowingForce * 1000; // to convert into KiloNewtons
+        throwingVector = mainCamera.transform.forward * currentThrust;
+        isThrowing = true;
+        
+
+    }
     
     public void BreakConnection()
     {
@@ -105,27 +175,11 @@ public class ObjectHolder : MonoBehaviour
         pickupRB = currentlyPickedUpObject.GetComponent<Rigidbody>();
         pickupRB.constraints = RigidbodyConstraints.FreezeRotation; // TODO necessary?
         pickupObject.objectHolder = this;
+
+        throwingPercent = 0f;
+
         StartCoroutine(pickupObject.PickUp());
 
     }
-
-
-
-
-    // [SerializeField] Transform holdingTranform;
-    // Transform originalParent = null;
-    // Transform heldObject = null;
-
-    // public void HoldObject(Transform obj) 
-    // {
-    //     originalParent = obj.parent;
-    //     obj.parent = holdingTranform;
-    //     heldObject = obj;
-    // }
-
-    // public void DropObject()
-    // {
-    //     heldObject.parent = originalParent;
-    // }
 
 }
