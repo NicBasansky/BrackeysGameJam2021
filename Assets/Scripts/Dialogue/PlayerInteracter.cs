@@ -55,7 +55,7 @@ namespace Jam.Control
 
             if (dialogueTriggered && (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space)))
             {
-                Interact();
+                DisplayNextSentence();
             }
         }
 
@@ -68,13 +68,14 @@ namespace Jam.Control
                 if (interactableObj != null) // TODO need currentInteractable?
                 {
                     currentInteractable = hit.transform.gameObject;
-                    Interact();
+                    DisplayNextSentence();
                     interactableObj.OnInteract();
                 }
             }
         }
 
-        private void Interact()
+        // START HERE try to discern from interacting and it is dialogue, physics pickup, or examinable
+        private void DisplayNextSentence()
         {
             if (!interacting)
             {
