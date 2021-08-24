@@ -58,7 +58,7 @@ public class ObjectHolder : MonoBehaviour
         if (Physics.SphereCast(raycastPos, sphereCastRadius, mainCamera.transform.forward, out hit, 
                                 maxDistance, 1 << interactableLayerIndex))
         {
-            lookObject = hit.collider.transform.root.gameObject;
+            lookObject = hit.collider.transform.gameObject;
         }
         else
         {
@@ -169,6 +169,11 @@ public class ObjectHolder : MonoBehaviour
     {
 
         pickupObject = lookObject.GetComponent<PickupObject>();
+        if (pickupObject == null)
+        {
+            Debug.Log("You are trying to pick up something without the PickupObject component on it.");
+            return;
+        }
         currentlyPickedUpObject = lookObject;
         pickupRB = currentlyPickedUpObject.GetComponent<Rigidbody>();
         pickupRB.constraints = RigidbodyConstraints.FreezeRotation; // TODO necessary?
