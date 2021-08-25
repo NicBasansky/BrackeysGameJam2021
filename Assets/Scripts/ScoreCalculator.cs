@@ -10,6 +10,7 @@ public class ObjectProperties
     [Range(0, 30)]
     public int mischiefMeterPointsOnDestruction;
     public int damageToScoreMultiplier = 2;
+    public int bonusOnDestruction = 100;
 }
 
 public class ScoreCalculator : MonoBehaviour
@@ -25,13 +26,13 @@ public class ScoreCalculator : MonoBehaviour
     // add bonus if this object destroyed another
     public void AddDestructionBonus()
     {
-
+        ScoreManager.Instance.AddToScore(properties.bonusOnDestruction);
     }
 
     // when this object is destroyed add to score relative to money value
     public void AddToScore_moneyValue()
     {
-
+        ScoreManager.Instance.AddToTotalMoneyValue(properties.moneyValue);
     }
 
     public void AddPointsToMischiefOnDestruction()

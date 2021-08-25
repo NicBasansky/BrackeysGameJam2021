@@ -18,10 +18,18 @@ public class MischiefManager : MMSingleton<MischiefManager>
     {
         StartCoroutine(ReduceMischiefMeter());
     }
+    
 
     public void AddPointsToMischief(int mischiefPoints)
     {
         mischiefAmount += mischiefPoints;
+        if (mischiefAmount >= maxMischiefAmount)
+        {
+            mischiefAmount = Mathf.Min(maxMischiefAmount, mischiefAmount);
+            // TODO call event that Max Mischief if reached
+            Debug.Log("Maximum Mischief Reached!");
+        }
+        
         hUD.UpdateMischiefMeterUI();
         CheckMischiefPercentForAdaptiveMusic();
     }

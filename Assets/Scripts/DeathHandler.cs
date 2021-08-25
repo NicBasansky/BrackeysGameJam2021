@@ -35,6 +35,8 @@ namespace NicLib.Health
             if (scoreCalculator)
             {
                 scoreCalculator.AddPointsToMischiefOnDestruction();
+                scoreCalculator.AddDestructionBonus();
+                scoreCalculator.AddToScore_moneyValue();
             }
         }
         

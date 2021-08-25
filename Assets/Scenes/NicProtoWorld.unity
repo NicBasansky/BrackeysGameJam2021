@@ -130,6 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1905405660}
     m_Modifications:
+    - target: {fileID: 1687411448824375852, guid: 2d8b445bb6dfe734f89814210e9ece3a, type: 3}
+      propertyPath: properties.moneyValue
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 3928168386948799828, guid: 2d8b445bb6dfe734f89814210e9ece3a, type: 3}
       propertyPath: m_Name
       value: PickupObject (5)
@@ -260,6 +264,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1905405660}
     m_Modifications:
+    - target: {fileID: 1687411448824375852, guid: 2d8b445bb6dfe734f89814210e9ece3a, type: 3}
+      propertyPath: properties.moneyValue
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 3928168386948799828, guid: 2d8b445bb6dfe734f89814210e9ece3a, type: 3}
       propertyPath: m_Name
       value: PickupObject (7)
@@ -338,6 +346,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1905405660}
     m_Modifications:
+    - target: {fileID: 1687411448824375852, guid: 2d8b445bb6dfe734f89814210e9ece3a, type: 3}
+      propertyPath: properties.moneyValue
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 3928168386948799828, guid: 2d8b445bb6dfe734f89814210e9ece3a, type: 3}
       propertyPath: m_Name
       value: PickupObject (9)
@@ -411,6 +423,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1905405660}
     m_Modifications:
+    - target: {fileID: 1687411448824375852, guid: 2d8b445bb6dfe734f89814210e9ece3a, type: 3}
+      propertyPath: properties.moneyValue
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 3928168386948799828, guid: 2d8b445bb6dfe734f89814210e9ece3a, type: 3}
       propertyPath: m_Name
       value: PickupObject (2)
@@ -489,6 +505,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1905405660}
     m_Modifications:
+    - target: {fileID: 1687411448824375852, guid: 2d8b445bb6dfe734f89814210e9ece3a, type: 3}
+      propertyPath: properties.moneyValue
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 3928168386948799828, guid: 2d8b445bb6dfe734f89814210e9ece3a, type: 3}
       propertyPath: m_Name
       value: PickupObject (12)
@@ -672,6 +692,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1905405660}
     m_Modifications:
+    - target: {fileID: 1687411448824375852, guid: 2d8b445bb6dfe734f89814210e9ece3a, type: 3}
+      propertyPath: properties.moneyValue
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 3928168386948799828, guid: 2d8b445bb6dfe734f89814210e9ece3a, type: 3}
       propertyPath: m_Name
       value: PickupObject (1)
@@ -750,6 +774,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1905405660}
     m_Modifications:
+    - target: {fileID: 1687411448824375852, guid: 2d8b445bb6dfe734f89814210e9ece3a, type: 3}
+      propertyPath: properties.moneyValue
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 3928168386948799828, guid: 2d8b445bb6dfe734f89814210e9ece3a, type: 3}
       propertyPath: m_Name
       value: PickupObject (4)
@@ -823,6 +851,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1905405660}
     m_Modifications:
+    - target: {fileID: 1687411448824375852, guid: 2d8b445bb6dfe734f89814210e9ece3a, type: 3}
+      propertyPath: properties.moneyValue
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 3928168386948799828, guid: 2d8b445bb6dfe734f89814210e9ece3a, type: 3}
       propertyPath: m_Name
       value: PickupObject (8)
@@ -1119,6 +1151,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1905405660}
     m_Modifications:
+    - target: {fileID: 1687411448824375852, guid: 2d8b445bb6dfe734f89814210e9ece3a, type: 3}
+      propertyPath: properties.moneyValue
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 3928168386948799828, guid: 2d8b445bb6dfe734f89814210e9ece3a, type: 3}
       propertyPath: m_Name
       value: PickupObject (11)
@@ -1271,6 +1307,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1905405660}
     m_Modifications:
+    - target: {fileID: 1687411448824375852, guid: 2d8b445bb6dfe734f89814210e9ece3a, type: 3}
+      propertyPath: properties.moneyValue
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 3928168386948799828, guid: 2d8b445bb6dfe734f89814210e9ece3a, type: 3}
       propertyPath: m_Name
       value: PickupObject (3)
@@ -1401,6 +1441,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1905405660}
     m_Modifications:
+    - target: {fileID: 1687411448824375852, guid: 2d8b445bb6dfe734f89814210e9ece3a, type: 3}
+      propertyPath: properties.moneyValue
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 3928168386948799828, guid: 2d8b445bb6dfe734f89814210e9ece3a, type: 3}
       propertyPath: m_Name
       value: PickupObject (6)
@@ -1560,6 +1604,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1905405660}
     m_Modifications:
+    - target: {fileID: 1687411448824375852, guid: 2d8b445bb6dfe734f89814210e9ece3a, type: 3}
+      propertyPath: properties.moneyValue
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 3928168386948799828, guid: 2d8b445bb6dfe734f89814210e9ece3a, type: 3}
       propertyPath: m_Name
       value: PickupObject (10)
@@ -1783,6 +1831,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1905405660}
     m_Modifications:
+    - target: {fileID: 1687411448824375852, guid: 2d8b445bb6dfe734f89814210e9ece3a, type: 3}
+      propertyPath: properties.moneyValue
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 3928168386948799828, guid: 2d8b445bb6dfe734f89814210e9ece3a, type: 3}
       propertyPath: m_Name
       value: PickupObject

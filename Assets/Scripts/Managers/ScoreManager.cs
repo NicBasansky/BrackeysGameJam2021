@@ -22,31 +22,41 @@ public class ScoreManager : MMSingleton<ScoreManager>
     public void AddToScore(int scoreAddition)
     {
         score += scoreAddition;
-        CalculateFinalScore();
+        CalculateScore();
     }
 
-    public void AddToTotalMoneyValue(int moneyAddition)
+    public void AddToTotalMoneyValue(float moneyAddition)
     {
         totalDestructionMoneyValue += moneyAddition;
-        CalculateFinalScore();
+        CalculateScore();
     }
 
     public void DeductScoreForMaxingMischief()
     {
         score -= scoreDeductionFromMaxingMischief;
-        CalculateFinalScore();
+        CalculateScore();
     }
 
-    public int CalculateFinalScore()
+    public int CalculateScore()
     {
         int scoreFromMoneyValue = (int)totalDestructionMoneyValue * pointsPerDollar;
-        int scoreFromMischief = (int)(100 - MischiefManager.Instance.GetMischiefPercent()) * pointsPerPercentNotMischief;
         // score deduction from having lost time from reaching 100% mischief?
 
-        score = score + scoreFromMoneyValue + scoreFromMischief;
+        score = score + scoreFromMoneyValue;
 
         hUD.UpdateScoreUI();
 
         return score; // need to return?
+    }
+
+    // needs to be called at the end of the game
+    private int CalculateFinalScoreWithMischiefBonus()
+    {
+        int scoreFromMischief = (int)(100 - MischiefManager.Instance.GetMischiefPercent()) * pointsPerPercentNotMischief;
+        score = score + scoreFromMischief;
+
+        hUD.UpdateScoreUI();
+
+        return score;
     }
 }
