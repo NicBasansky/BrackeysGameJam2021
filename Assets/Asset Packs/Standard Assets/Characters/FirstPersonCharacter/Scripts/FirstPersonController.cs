@@ -173,7 +173,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
             m_NextStep = m_StepCycle + m_StepInterval;
 
-            FMODUnity.RuntimeManager.PlayOneShot("event:/sfx/footsteps/floor");
+            FMODUnity.RuntimeManager.PlayOneShot("event:/sfx/footsteps/carpet");
         }
 
 
