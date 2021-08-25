@@ -6,6 +6,9 @@ using System;
 
 public class MischiefManager : MMSingleton<MischiefManager>
 {
+    [FMODUnity.ParamRef]
+    string mischief;
+        
     [SerializeField] float mischiefAmount = 0f;
     [Min(1f)]
     [SerializeField] float maxMischiefAmount = 100f;
@@ -17,7 +20,14 @@ public class MischiefManager : MMSingleton<MischiefManager>
     void Start()
     {
         StartCoroutine(ReduceMischiefMeter());
+    //    MainMusic = FMODUnity.RuntimeManager.CreateInstance("event:/music/gameplay");
+    //    MainMusic.start();
     }
+
+    //void Update()
+    //{
+    //    MainMusic.setParameterByName("mischief", 0f);
+    //}
 
     public void AddPointsToMischief(int mischiefPoints)
     {
@@ -29,24 +39,10 @@ public class MischiefManager : MMSingleton<MischiefManager>
     // TODO GUS SOUNDS
     private void CheckMischiefPercentForAdaptiveMusic()
     {
-        float percent = GetMischiefPercent();
-        if (percent <= .1f)
-        {
-            // play music that is under 10%
-        }
-        else if (percent <= .5f)
-        {
-            // play music that is under 50% but above 10%
-        }
-        else if (percent <= .75)
-        {
-            // play music that is under 75% but above 50%
-        }
-        else
-        {
-            // play music that is above 75%
-        }
+         float percent = GetMischiefPercent();
+         FMODUnity.RuntimeManager.StudioSystem.setParameterByName("mischief", GetMischiefPercent());
     }
+    
 
     public float GetMischiefPercent()
     {
