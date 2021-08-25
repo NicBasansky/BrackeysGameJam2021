@@ -6,6 +6,7 @@ public class HUD : MonoBehaviour
 {
     [SerializeField] ScoreUI scoreUI;
     [SerializeField] MischiefMeterUI mischiefMeterUI;
+    [SerializeField] TimerUI timerUI;
 
     public void UpdateScoreUI()
     {
@@ -15,5 +16,10 @@ public class HUD : MonoBehaviour
     public void UpdateMischiefMeterUI()
     {
         mischiefMeterUI.UpdateMischiefMeter();
+    }
+
+    public void UpdateTimerUI(float timerValue)
+    {
+        timerUI.UpdateTimerUI(timerValue);
     }
 }
