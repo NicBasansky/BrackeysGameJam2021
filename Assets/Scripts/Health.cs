@@ -12,13 +12,15 @@ namespace NicLib.Health
         bool isDead = false;
         
         DeathHandler deathHandler;
-        
+        ScoreCalculator scoreCalculator;
+
         public event Action onDeath;
         public event Action onHealthUpdated;
 
         void Awake()
         {
             deathHandler = GetComponent<DeathHandler>();
+            scoreCalculator = GetComponent<ScoreCalculator>();
         }
 
         void Start()
@@ -34,7 +36,9 @@ namespace NicLib.Health
         public void AffectHealth(float delta)
         {
             if (isDead) return;
-                        
+
+            AffectScore(delta);
+            
             health += delta;
             health = Mathf.Clamp(health, 0, maxHealth);
 
@@ -49,6 +53,12 @@ namespace NicLib.Health
                 return;
             }
               
+        }
+
+        private void AffectScore(float delta)
+        {
+            float damage = delta * -1; // incoming damage is a negative number, this makes it positive.
+            scoreCalculator.AddToScore_Damage(damage);
         }
 
         public float GetHealthFraction()
@@ -72,7 +82,6 @@ namespace NicLib.Health
         {
             isDead = true;
             
-            print(gameObject.name + " has died");
 
             if (onDeath != null)
             {

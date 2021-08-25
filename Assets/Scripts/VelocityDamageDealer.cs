@@ -8,6 +8,7 @@ public class VelocityDamageDealer : MonoBehaviour
 {
     [Tooltip("If this is 3, then for every meter per second in velocity you deal 3 times that amount in damage. Higher values makes this a more damaging object. ex: if velocity is 10 then you deal 50 damage")]
     [SerializeField] float damageToVelocityMultiplier = 5;
+    [SerializeField] float minVelocityForDamage = 2f;
 
     Rigidbody rb;
     [SerializeField] int interactableLayerIndex = 6;
@@ -21,9 +22,13 @@ public class VelocityDamageDealer : MonoBehaviour
     {
         if (collision.transform.gameObject.layer == interactableLayerIndex)
         {
-            // TODO find out what the min velocity should be in order to start dealing any damage
-            Health health = GetComponent<Health>();
-            health.AffectHealth(-rb.velocity.magnitude * damageToVelocityMultiplier);
+            if (rb.velocity.magnitude >= minVelocityForDamage)
+            {
+                // TODO find out what the min velocity should be in order to start dealing any damage
+                Health health = GetComponent<Health>();
+                health.AffectHealth(-rb.velocity.magnitude * damageToVelocityMultiplier);
+            }
+            
         }
     }
 }
