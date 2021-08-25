@@ -10,7 +10,7 @@ public class MischiefManager : MMSingleton<MischiefManager>
     [Min(1f)]
     [SerializeField] float maxMischiefAmount = 100f;
     [SerializeField] float mischiefRecoveryIntervalSeconds = 0.4f;
-    [SerializeField] float recoveryAmountPerInterval = 3f;
+    [SerializeField] float recoveryAmountPerInterval = 1f;
     [SerializeField] HUD hUD;
 
 
