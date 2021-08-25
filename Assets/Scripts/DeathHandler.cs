@@ -16,6 +16,8 @@ namespace NicLib.Health
 
         [SerializeField] bool shouldAutoDestroy = true;
 
+        ScoreCalculator scoreCalculator;
+
 
         public void Kill()
         {
@@ -27,6 +29,12 @@ namespace NicLib.Health
             if (shouldAutoDestroy)
             {
                 Destroy(this.gameObject, 2f);
+            }
+
+            scoreCalculator = GetComponent<ScoreCalculator>();
+            if (scoreCalculator)
+            {
+                scoreCalculator.AddPointsToMischiefOnDestruction();
             }
         }
         
