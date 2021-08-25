@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ZoomLook : MonoBehaviour
 {
-    [SerializeField] Camera camera;
+    [SerializeField] Camera cam;
     [SerializeField] float zoomInFov = 37f;
 
     [SerializeField] float lineTraceRange = 3f;
@@ -13,18 +13,18 @@ public class ZoomLook : MonoBehaviour
 
     void Start()
     {
-        initialFOV = camera.fieldOfView;
+        initialFOV = cam.fieldOfView;
     }
 
 
     public void ZoomIn() // todo smooth camera
     {
-        camera.fieldOfView = zoomInFov;
+        cam.fieldOfView = zoomInFov;
     }
 
     public void ZoomOut()
     {
-        camera.fieldOfView = initialFOV;
+        cam.fieldOfView = initialFOV;
 
     }
 

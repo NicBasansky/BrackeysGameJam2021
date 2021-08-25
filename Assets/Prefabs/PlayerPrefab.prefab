@@ -427,7 +427,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc6971b6f3fc90e4f81465fccd5505bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camera: {fileID: 6440595255491339938}
+  cam: {fileID: 6440595255491339938}
   zoomInFov: 37
   lineTraceRange: 3
 --- !u!114 &5280302754676235092
