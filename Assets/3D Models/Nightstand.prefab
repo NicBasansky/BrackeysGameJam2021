@@ -90,8 +90,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4592617088558142}
-  - component: {fileID: -7928287225003467299}
-  - component: {fileID: -8328471345899324739}
+  - component: {fileID: 64978232101920770}
+  - component: {fileID: -191238584791711642}
   m_Layer: 0
   m_Name: Nightstand
   m_TagString: Untagged
@@ -116,7 +116,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &-7928287225003467299
+--- !u!64 &64978232101920770
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -130,7 +130,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
---- !u!65 &-8328471345899324739
+--- !u!65 &-191238584791711642
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
