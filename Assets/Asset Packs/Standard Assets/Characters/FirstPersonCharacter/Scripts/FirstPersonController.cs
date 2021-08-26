@@ -96,6 +96,11 @@ namespace UnityStandardAssets.Characters.FirstPerson
             this.shouldFreeze = shouldFreeze;
         }
 
+        public void UnlockCursor()
+        {
+            m_MouseLook.lockCursor = false;
+        }
+
 
         private void PlayLandingSound()
         {
