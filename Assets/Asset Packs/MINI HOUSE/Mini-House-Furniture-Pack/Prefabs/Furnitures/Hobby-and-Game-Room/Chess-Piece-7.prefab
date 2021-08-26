@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6611525110500867947}
   - component: {fileID: 3536286401912302873}
   - component: {fileID: 1112774569023783257}
+  - component: {fileID: -398252395675982811}
   m_Layer: 0
   m_Name: Chess-Piece-7
   m_TagString: Untagged
@@ -55,6 +56,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -79,3 +81,17 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &-398252395675982811
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7875274766925172276}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.030838128, y: 0.067278266, z: 0.030064955}
+  m_Center: {x: 0.0000000013969839, y: 0.033456303, z: 0.00078311795}

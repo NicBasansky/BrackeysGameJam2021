@@ -333,8 +333,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4481593083717680}
-  - component: {fileID: 64338241705802498}
-  - component: {fileID: -6295066167922803019}
+  - component: {fileID: 5888566873789477529}
+  - component: {fileID: 2935256357631146951}
   m_Layer: 0
   m_Name: Bed
   m_TagString: Untagged
@@ -362,7 +362,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &64338241705802498
+--- !u!64 &5888566873789477529
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -376,7 +376,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
---- !u!65 &-6295066167922803019
+--- !u!65 &2935256357631146951
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
