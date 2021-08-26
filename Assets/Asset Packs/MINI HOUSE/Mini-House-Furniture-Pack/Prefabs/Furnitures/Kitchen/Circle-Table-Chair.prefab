@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 2541559066319574475}
   - component: {fileID: 7149569428438971824}
   - component: {fileID: 6780798507891224630}
-  - component: {fileID: 549600573909416112}
   m_Layer: 0
   m_Name: Circle-Table-Chair
   m_TagString: Untagged
@@ -56,7 +55,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -81,17 +79,3 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &549600573909416112
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1110609663773301600}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.3265451, y: 0.3961287, z: 0.32654482}
-  m_Center: {x: -0.0005004853, y: 0.19301012, z: -0.0037508607}

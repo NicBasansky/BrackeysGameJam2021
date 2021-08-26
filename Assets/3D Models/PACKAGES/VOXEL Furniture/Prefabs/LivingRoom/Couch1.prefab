@@ -11,9 +11,8 @@ GameObject:
   - component: {fileID: 4787027646976458}
   - component: {fileID: 33076672451159618}
   - component: {fileID: 23281216918621506}
+  - component: {fileID: 65399555843518832}
   - component: {fileID: 65549170800753266}
-  - component: {fileID: -3295103798442375851}
-  - component: {fileID: -1305495481115464028}
   m_Layer: 0
   m_Name: Couch1
   m_TagString: Untagged
@@ -58,7 +57,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -85,7 +83,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &65399555843518832
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1010169120952656}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0062497994, y: 0.059999987, z: 0.025062881}
+  m_Center: {x: 0.012530608, y: 0.00000005960466, z: 0.0025314372}
 --- !u!65 &65549170800753266
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -99,29 +109,3 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.025655458, y: 0.059999987, z: 0.010431863}
   m_Center: {x: 0.0028277885, y: 0.000000059604666, z: -0.0047840723}
---- !u!65 &-3295103798442375851
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1010169120952656}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.025655458, y: 0.06, z: 0.025062887}
-  m_Center: {x: 0.002827729, y: 0, z: 0.0025314437}
---- !u!65 &-1305495481115464028
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1010169120952656}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.025655458, y: 0.06, z: 0.025062887}
-  m_Center: {x: 0.002827729, y: 0, z: 0.0025314437}
