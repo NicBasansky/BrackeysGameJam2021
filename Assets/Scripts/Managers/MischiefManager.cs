@@ -23,6 +23,7 @@ public class MischiefManager : MMSingleton<MischiefManager>
     //    MainMusic = FMODUnity.RuntimeManager.CreateInstance("event:/music/gameplay");
     //    MainMusic.start();
     }
+    
 
     //void Update()
     //{
@@ -32,6 +33,13 @@ public class MischiefManager : MMSingleton<MischiefManager>
     public void AddPointsToMischief(int mischiefPoints)
     {
         mischiefAmount += mischiefPoints;
+        if (mischiefAmount >= maxMischiefAmount)
+        {
+            mischiefAmount = Mathf.Min(maxMischiefAmount, mischiefAmount);
+            // TODO call event that Max Mischief if reached
+            Debug.Log("Maximum Mischief Reached!");
+        }
+        
         hUD.UpdateMischiefMeterUI();
         CheckMischiefPercentForAdaptiveMusic();
     }

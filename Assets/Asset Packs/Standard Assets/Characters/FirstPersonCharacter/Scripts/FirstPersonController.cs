@@ -4,6 +4,7 @@ using UnityStandardAssets.CrossPlatformInput;
 using UnityStandardAssets.Utility;
 using Random = UnityEngine.Random;
 
+#pragma warning disable 618, 649
 namespace UnityStandardAssets.Characters.FirstPerson
 {
     [RequireComponent(typeof (CharacterController))]
@@ -42,6 +43,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private bool m_Jumping;
         private AudioSource m_AudioSource;
 
+        private bool shouldFreeze = false;
+
         // Use this for initialization
         private void Start()
         {
@@ -62,10 +65,15 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private void Update()
         {
             RotateView();
+
+            // My own code, also in fixed update
+            if (shouldFreeze) return;
+
             // the jump state needs to read here to make sure it is not missed
             if (!m_Jump)
             {
-                m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
+                // DISABLED JUMP to re-enable, uncomment this line
+                //m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
             }
 
             if (!m_PreviouslyGrounded && m_CharacterController.isGrounded)
@@ -83,6 +91,16 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_PreviouslyGrounded = m_CharacterController.isGrounded;
         }
 
+        public void SetShouldFreeze(bool shouldFreeze)
+        {
+            this.shouldFreeze = shouldFreeze;
+        }
+
+        public void UnlockCursor()
+        {
+            m_MouseLook.lockCursor = false;
+        }
+
 
         private void PlayLandingSound()
         {
@@ -94,6 +112,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         private void FixedUpdate()
         {
+            if (shouldFreeze) return;
+
             float speed;
             GetInput(out speed);
             // always move along the camera forward as it is the direction that it being aimed at
