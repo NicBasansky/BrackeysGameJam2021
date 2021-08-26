@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4095373046799278}
   - component: {fileID: 33866318056879612}
   - component: {fileID: 23201502160736260}
-  - component: {fileID: 65909115355219308}
+  - component: {fileID: 484238856329546344}
   m_Layer: 0
   m_Name: Pilled
   m_TagString: Untagged
@@ -56,6 +56,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -85,7 +86,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &65909115355219308
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &484238856329546344
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -96,5 +98,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.0089339735, y: 0.008857516, z: 0.0069725085}
-  m_Center: {x: -0.0011738009, y: -0.0015430615, z: 0.0034284764}
+  m_Size: {x: 0.0089339735, y: 0.008857517, z: 0.0069725094}
+  m_Center: {x: -0.0011738009, y: -0.0015429723, z: 0.0034284825}
