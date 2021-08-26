@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 487142696122002776}
   - component: {fileID: 4501676642172141209}
   - component: {fileID: 5760878245985409782}
+  - component: {fileID: 4013613541972730619}
   m_Layer: 0
   m_Name: Paint-Brush
   m_TagString: Untagged
@@ -81,3 +82,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &4013613541972730619
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1288724639423929168}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8811621466311810375, guid: c78123ca5fc9494419b47b08f694012c, type: 3}

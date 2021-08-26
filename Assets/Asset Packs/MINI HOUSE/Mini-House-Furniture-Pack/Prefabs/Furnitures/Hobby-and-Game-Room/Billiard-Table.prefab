@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4690297942656298227}
   - component: {fileID: 9181329317555395533}
   - component: {fileID: 5594830637734258173}
+  - component: {fileID: 3222361743003533918}
   m_Layer: 0
   m_Name: Billiard-Table
   m_TagString: Untagged
@@ -81,3 +82,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &3222361743003533918
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1988531073668288791}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2026719888770961335, guid: ae886c33ca9680242aae692c72c92a18, type: 3}

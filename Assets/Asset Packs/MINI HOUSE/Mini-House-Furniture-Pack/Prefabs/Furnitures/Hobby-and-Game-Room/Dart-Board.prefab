@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 702642834991155106}
   - component: {fileID: 496668005926107459}
   - component: {fileID: 38270899241610673}
+  - component: {fileID: 8200539582143565038}
   m_Layer: 0
   m_Name: Dart-Board
   m_TagString: Untagged
@@ -81,3 +82,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &8200539582143565038
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5318730622148463576}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4084730438064271979, guid: c53c090b279f27142ad54f77747ab0be, type: 3}

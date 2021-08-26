@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2669955405643824398}
   - component: {fileID: 4112978105372747245}
   - component: {fileID: 2445734620972770413}
+  - component: {fileID: 8043287440578978617}
   m_Layer: 0
   m_Name: Chess-Piece-5
   m_TagString: Untagged
@@ -95,3 +96,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.02680066, y: 0.06551256, z: 0.026128713}
   m_Center: {x: -9.313226e-10, y: 0.032481987, z: -0.00068059005}
+--- !u!64 &8043287440578978617
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1884906478905733413}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -1582987162749274838, guid: 214d1bd20fa577d4e8eafc913edeb250, type: 3}

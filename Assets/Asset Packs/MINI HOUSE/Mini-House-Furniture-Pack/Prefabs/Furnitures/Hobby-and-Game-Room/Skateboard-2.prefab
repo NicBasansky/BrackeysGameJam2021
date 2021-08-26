@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5109508605991569177}
   - component: {fileID: 8162568253066102972}
   - component: {fileID: 6243031273740319862}
+  - component: {fileID: -4141216388066932593}
   m_Layer: 0
   m_Name: Skateboard-2
   m_TagString: Untagged
@@ -81,3 +82,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-4141216388066932593
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5594402770437119395}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -4964603207275902958, guid: 28d0bf990142da042bdadc26a33db624, type: 3}

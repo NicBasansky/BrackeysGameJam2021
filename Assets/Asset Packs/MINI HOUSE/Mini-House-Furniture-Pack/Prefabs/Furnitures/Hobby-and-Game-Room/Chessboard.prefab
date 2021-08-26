@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7089692363254883790}
   - component: {fileID: 5814145875079460296}
   - component: {fileID: -3047666834211316729}
+  - component: {fileID: -377280839495182610}
   m_Layer: 0
   m_Name: Chessboard
   m_TagString: Untagged
@@ -95,3 +96,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.5584861, y: 0.040178567, z: 0.5584861}
   m_Center: {x: 0, y: 0.019287452, z: 0}
+--- !u!64 &-377280839495182610
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5255348652648817076}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8004565066021545914, guid: 214d1bd20fa577d4e8eafc913edeb250, type: 3}
