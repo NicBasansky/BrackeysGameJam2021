@@ -11,17 +11,7 @@ public class HUD : MonoBehaviour
     [SerializeField] EndScreen endScreen;
     [SerializeField] FirstPersonController controller;
 
-
-    void Start()
-    {
-        StartCoroutine(ShowScreen());
-    }
-
-    IEnumerator ShowScreen()
-    {
-        yield return new WaitForSeconds(2f);
-        ShowEndScreen(false);
-    }
+   
 
     public void UpdateScoreUI()
     {
