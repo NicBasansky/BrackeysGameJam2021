@@ -55,7 +55,8 @@ namespace NicLib.Health
         {
             if (deathSound != null)
             {
-                AudioSource.PlayClipAtPoint(deathSound, transform.position);
+                //AudioSource.PlayClipAtPoint(deathSound, transform.position);
+                FMODUnity.RuntimeManager.PlayOneShot("event:/sfx/destroy/explosion");
             }
         }
         

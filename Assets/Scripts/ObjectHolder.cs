@@ -90,6 +90,7 @@ public class ObjectHolder : MonoBehaviour
             {
                 // build up the throwing percent of max throwing force, increase force bar
                 //throwingPercent += (maxChargingSeconds /)
+                FMODUnity.RuntimeManager.PlayOneShot("event:/sfx/baby/charge"); 
                 InvokeRepeating("IncreaseThrowingPercent", 0.5f, Time.deltaTime);
                 windUp = true;
             }
@@ -104,6 +105,7 @@ public class ObjectHolder : MonoBehaviour
                 ExertForce();
                 BreakConnection();
             }
+            FMODUnity.RuntimeManager.PlayOneShot("event:/sfx/baby/throw");
             throwingPercent = 0f;
             windUp = false;
         }

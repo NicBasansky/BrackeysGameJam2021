@@ -23,12 +23,14 @@ public class ScoreManager : MMSingleton<ScoreManager>
     {
         score += scoreAddition;
         CalculateScore();
+
     }
 
     public void AddToTotalMoneyValue(float moneyAddition)
     {
         totalDestructionMoneyValue += moneyAddition;
         CalculateScore();
+        FMODUnity.RuntimeManager.PlayOneShot("event:/sfx/cash/mid");
     }
 
     public void DeductScoreForMaxingMischief()

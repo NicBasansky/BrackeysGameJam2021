@@ -20,16 +20,8 @@ public class MischiefManager : MMSingleton<MischiefManager>
     void Start()
     {
         StartCoroutine(ReduceMischiefMeter());
-    //    MainMusic = FMODUnity.RuntimeManager.CreateInstance("event:/music/gameplay");
-    //    MainMusic.start();
     }
     
-
-    //void Update()
-    //{
-    //    MainMusic.setParameterByName("mischief", 0f);
-    //}
-
     public void AddPointsToMischief(int mischiefPoints)
     {
         mischiefAmount += mischiefPoints;
