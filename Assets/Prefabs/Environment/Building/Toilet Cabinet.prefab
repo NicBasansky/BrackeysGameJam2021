@@ -11,11 +11,6 @@ GameObject:
   - component: {fileID: 7717179165635628925}
   - component: {fileID: 7717179165635628924}
   - component: {fileID: 7717179165635628921}
-  - component: {fileID: 5646800510110034712}
-  - component: {fileID: 620346493970823940}
-  - component: {fileID: 6745061582876093841}
-  - component: {fileID: 3500425137266277299}
-  - component: {fileID: 5400279947205670922}
   m_Layer: 6
   m_Name: Toilet Cabinet
   m_TagString: Untagged
@@ -67,87 +62,6 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &5646800510110034712
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7717179165635628914}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00be4bcf2fc6ded439dd950b3e849714, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 100
-  health: 0
---- !u!114 &620346493970823940
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7717179165635628914}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d181959c6e6794f48873fb64d7993fc9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  deathSound: {fileID: 0}
-  deathFxPrefab: {fileID: 100010, guid: d8713a58d755d1a4cadbd1ad74492dd4, type: 3}
-  fxSpawnParent: {fileID: 0}
-  meshesToOffOnDeath:
-  - {fileID: 0}
-  parentGOToOffChildrenOnDeath: {fileID: 0}
-  shouldAutoDestroy: 1
---- !u!114 &6745061582876093841
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7717179165635628914}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68d6779a7d9a75241b945076e28ed7ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectHolder: {fileID: 0}
-  pickedUp: 0
-  breakForce: 35
-  waitOnPickup: 0.2
---- !u!114 &3500425137266277299
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7717179165635628914}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42c6a9ebf257511439ece24f2546780d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damageToVelocityMultiplier: 5
-  minVelocityForDamage: 2
-  interactableLayerIndex: 6
---- !u!114 &5400279947205670922
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7717179165635628914}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3211b93ed739e6749b91092c496abd91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  properties:
-    moneyValue: 0
-    mischiefMeterPointsOnDestruction: 15
-    damageToScoreMultiplier: 2
-    bonusOnDestruction: 100
 --- !u!1001 &6434211246314861430
 PrefabInstance:
   m_ObjectHideFlags: 0
