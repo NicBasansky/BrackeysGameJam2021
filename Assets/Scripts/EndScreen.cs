@@ -30,6 +30,12 @@ public class EndScreen : MonoBehaviour
 
     public void RestartScene()
     {
+        Invoke("LoadScene", 1.5f);
+    }
+
+    private void LoadScene()
+    {
         SceneManager.LoadSceneAsync(1, LoadSceneMode.Single);
+
     }
 }
