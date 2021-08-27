@@ -7,8 +7,8 @@ namespace NicLib.Health
     public class Health : MonoBehaviour
     {
         [SerializeField] float maxHealth = 100f;
-        [SerializeField] float health;   
-        
+        [SerializeField] float health;
+
         bool isDead = false;
         
         DeathHandler deathHandler;
