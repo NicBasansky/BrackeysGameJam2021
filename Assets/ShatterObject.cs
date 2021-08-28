@@ -7,6 +7,7 @@ public class ShatterObject : MonoBehaviour
 {
     [SerializeField] float explosionForce = 8f;
     [SerializeField] float explosionRadius = 3f;
+    [Tooltip("This is useful for things like a base for the sculpture to sit on")]
     [SerializeField] GameObject[] objectsToDetatchAddRB;
 
 

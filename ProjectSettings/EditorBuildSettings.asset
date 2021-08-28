@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/StartScreen.unity
     guid: 479c4d3f5ed6a5f43a3a48b41992431d
   - enabled: 1
-    path: Assets/Scenes/NicProtoWorld.unity
-    guid: 80643f4a81170ac4181d2ccf6f671ce6
+    path: Assets/Scenes/HouseMap.unity
+    guid: c34d4e03060ee9646a3bc8947dd65e76
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 432de990510d4fe4a9afdcd6a6763b45, type: 2}

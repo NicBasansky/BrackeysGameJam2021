@@ -49,8 +49,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.27147102, y: 0.15976375, z: 0.27632856}
-  m_Center: {x: 3.78835, y: 0.089851916, z: -0.16270459}
+  m_Size: {x: 0.24157429, y: 0.12735891, z: 0.13195491}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &6034082695015820319
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -94,6 +94,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathSound: {fileID: 0}
+  shatterObject: {fileID: 0}
   deathFxPrefab: {fileID: 100010, guid: d8713a58d755d1a4cadbd1ad74492dd4, type: 3}
   fxSpawnParent: {fileID: 0}
   meshesToOffOnDeath:
@@ -155,37 +156,41 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6034082695015820315}
     m_Modifications:
+    - target: {fileID: 3844866056935331921, guid: cf788d8ce7bbef6428c4ccfeb24dbf0d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4388996623269934901, guid: cf788d8ce7bbef6428c4ccfeb24dbf0d, type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4388996623269934901, guid: cf788d8ce7bbef6428c4ccfeb24dbf0d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.7985082
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4388996623269934901, guid: cf788d8ce7bbef6428c4ccfeb24dbf0d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4388996623269934901, guid: cf788d8ce7bbef6428c4ccfeb24dbf0d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.17476745
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4388996623269934901, guid: cf788d8ce7bbef6428c4ccfeb24dbf0d, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9131704
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4388996623269934901, guid: cf788d8ce7bbef6428c4ccfeb24dbf0d, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4388996623269934901, guid: cf788d8ce7bbef6428c4ccfeb24dbf0d, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.40757793
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4388996623269934901, guid: cf788d8ce7bbef6428c4ccfeb24dbf0d, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4388996623269934901, guid: cf788d8ce7bbef6428c4ccfeb24dbf0d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -193,7 +198,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4388996623269934901, guid: cf788d8ce7bbef6428c4ccfeb24dbf0d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 48.813
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4388996623269934901, guid: cf788d8ce7bbef6428c4ccfeb24dbf0d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -203,7 +208,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: ToyCar (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3844866056935331921, guid: cf788d8ce7bbef6428c4ccfeb24dbf0d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: cf788d8ce7bbef6428c4ccfeb24dbf0d, type: 3}
 --- !u!4 &7547630141634865780 stripped
 Transform:

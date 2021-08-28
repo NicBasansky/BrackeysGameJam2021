@@ -25,7 +25,7 @@ public class ObjectHolder : MonoBehaviour
     private float extraThrowingPercentThisFrame = 0f;
     private bool windUp = false;
     private float windUpSpeed;
-    [SerializeField] Vector3 windUpPos = new Vector3(0, 0.35f, 1.5f);
+    Vector3 windUpPos = new Vector3(0, 0.35f, -.65f);
 
     [Header("Pickup")]
     [SerializeField] Transform pickupParent;

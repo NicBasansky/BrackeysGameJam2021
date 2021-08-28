@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2435210004870690253}
-  - component: {fileID: 2916352316002638505}
   m_Layer: 0
   m_Name: ToyCar (2)
   m_TagString: Untagged
@@ -32,19 +31,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 118.166, z: 0}
---- !u!65 &2916352316002638505
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8367278308199164401}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 4.554248, y: 2.0873475, z: 2.542831}
-  m_Center: {x: -0.19950843, y: 0.043673694, z: -0.0000006556511}
 --- !u!1001 &1251037405694379277
 PrefabInstance:
   m_ObjectHideFlags: 0
