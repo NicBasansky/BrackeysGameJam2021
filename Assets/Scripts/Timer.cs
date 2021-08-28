@@ -4,11 +4,22 @@ using UnityEngine;
 
 public class Timer : MonoBehaviour
 {
+
+    private FMOD.Studio.EventInstance musicEvent;
+
     public float timerSeconds = 90f;
     [SerializeField] HUD hUD;
 
+    void Start()
+    {
+        musicEvent = FMODUnity.RuntimeManager.CreateInstance("event:/music/gameplay");
+        musicEvent.start();
+    }
+
+
     void Update()
     {
+     
         if (timerSeconds > 0)
         {
             timerSeconds -= Time.deltaTime;
@@ -18,7 +29,10 @@ public class Timer : MonoBehaviour
         {
             timerSeconds = 0;
             Debug.Log("Timer has run out!");
-            GameOverManager.Instance.GameOver();
+            
+            musicEvent.stop (FMOD.Studio.STOP_MODE.IMMEDIATE);
+            musicEvent.release ();
+
             hUD.ShowEndScreen(true);
         }
         DisplayTimer(timerSeconds);
