@@ -2,16 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using MoreMountains.Tools;
+using FMOD.Studio;
 
 public class AudioTriggerManager : MMSingleton<AudioTriggerManager>
 {
     bool isSpeaking = false;
     float isSpeakingResetSeconds = 2.0f;
 
-    // void Start()
-    // {
-    //     StartCoroutine(PlaySound());
-    // }
+    void Start()
+    {
+        // Bus musicBus = FMODUnity.RuntimeManager.GetBus("bus:/music/gameplay");
+        // musicBus.setMute(true);
+        //StartCoroutine(PlaySound());
+    }
 
     // IEnumerator PlaySound()
     // {

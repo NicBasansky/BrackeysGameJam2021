@@ -49,8 +49,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.23811722, y: 0.11204994, z: 0.3093722}
-  m_Center: {x: -0.013703346, y: 0.03288704, z: -0.019183993}
+  m_Size: {x: 0.19321728, y: 0.07127911, z: 0.25363445}
+  m_Center: {x: -0.020154476, y: 0.029532522, z: -0.01660347}
 --- !u!54 &1763332899601947984
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -93,8 +93,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d181959c6e6794f48873fb64d7993fc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathSound: {fileID: 0}
-  deathFxPrefab: {fileID: 100010, guid: d8713a58d755d1a4cadbd1ad74492dd4, type: 3}
+  eventPathDestructionSound: 
+  deathSound:
+  - {fileID: 0}
+  shatterObject: {fileID: 0}
+  deathFxPrefab: {fileID: 1721238331839892331, guid: 678964c46c2b4594681a75aa1faaad71, type: 3}
   fxSpawnParent: {fileID: 0}
   meshesToOffOnDeath:
   - {fileID: 0}
@@ -203,7 +206,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Joystick
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -2451791345068304123, guid: 227ee6608940b37409a938199f312150, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 227ee6608940b37409a938199f312150, type: 3}
 --- !u!4 &8213744108767333317 stripped
 Transform:

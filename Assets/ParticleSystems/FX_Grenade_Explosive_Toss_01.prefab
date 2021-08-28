@@ -24092,6 +24092,7 @@ GameObject:
   - component: {fileID: 7365829290903256585}
   - component: {fileID: 7275057962294404713}
   - component: {fileID: 7274288347901998617}
+  - component: {fileID: -1671347545143604950}
   m_Layer: 0
   m_Name: FX_Grenade_Explosive_Toss_01
   m_TagString: Untagged
@@ -28976,3 +28977,16 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!114 &-1671347545143604950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7364236770154735715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1a46b8801e3d6443a5ea6337a04694e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyDelay: 5

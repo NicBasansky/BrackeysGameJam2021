@@ -9,13 +9,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9179626604408980820}
-  - component: {fileID: 9179626604408980821}
   - component: {fileID: 9179626604408980816}
   - component: {fileID: 6494489144773730609}
   - component: {fileID: 2082793382753481005}
   - component: {fileID: 5325292804450199480}
   - component: {fileID: 2659510061174272410}
   - component: {fileID: 6813346257627509283}
+  - component: {fileID: 8120810990345253731}
   m_Layer: 6
   m_Name: Coffee Cup Kitchen
   m_TagString: Untagged
@@ -32,25 +32,12 @@ Transform:
   m_GameObject: {fileID: 9179626604408980827}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 11.249935, y: -4, z: 0.27980435}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 2497860253073204721}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &9179626604408980821
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9179626604408980827}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.1325922, y: 0.11601853, z: 0.113256365}
-  m_Center: {x: -0.005525112, y: 0.04419911, z: -0.0013812035}
 --- !u!54 &9179626604408980816
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -79,7 +66,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00be4bcf2fc6ded439dd950b3e849714, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 5
   health: 0
 --- !u!114 &2082793382753481005
 MonoBehaviour:
@@ -93,7 +80,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d181959c6e6794f48873fb64d7993fc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathSound: {fileID: 0}
+  eventPathDestructionSound: 
+  deathSound:
+  - {fileID: 8300000, guid: 9ba96bdcdbb13304592a9c6a34e52629, type: 3}
+  - {fileID: 8300000, guid: d387e47cda506824594ef2bbabbb5ea4, type: 3}
+  - {fileID: 8300000, guid: 0aed61a702f888c4b85faee7e583827e, type: 3}
   shatterObject: {fileID: 0}
   deathFxPrefab: {fileID: 1721238331839892331, guid: 678964c46c2b4594681a75aa1faaad71, type: 3}
   fxSpawnParent: {fileID: 0}
@@ -145,10 +136,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   properties:
-    moneyValue: 0
-    mischiefMeterPointsOnDestruction: 15
+    moneyValue: 15
+    mischiefMeterPointsOnDestruction: 9
     damageToScoreMultiplier: 2
-    bonusOnDestruction: 100
+    bonusOnDestruction: 250
+--- !u!64 &8120810990345253731
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9179626604408980827}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -9146618070568788744, guid: 222d179fb7b0ebc4fa5e81f54038f1c6, type: 3}
 --- !u!1001 &6263431091322351560
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -159,6 +164,18 @@ PrefabInstance:
     - target: {fileID: 8378388340127894073, guid: e1804e9cc69cd3d45a39a3b0aeb7cf0c, type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8378388340127894073, guid: e1804e9cc69cd3d45a39a3b0aeb7cf0c, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8378388340127894073, guid: e1804e9cc69cd3d45a39a3b0aeb7cf0c, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8378388340127894073, guid: e1804e9cc69cd3d45a39a3b0aeb7cf0c, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8378388340127894073, guid: e1804e9cc69cd3d45a39a3b0aeb7cf0c, type: 3}
       propertyPath: m_LocalPosition.x

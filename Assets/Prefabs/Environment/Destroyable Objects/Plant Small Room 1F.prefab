@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 2492187933292839681}
   - component: {fileID: 5735686383834715427}
   - component: {fileID: 3890235404917544602}
+  - component: {fileID: 5322413128052066104}
   m_Layer: 6
   m_Name: Plant Small Room 1F
   m_TagString: Untagged
@@ -49,8 +50,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.39206934, y: 0.5096402, z: 0.39493626}
-  m_Center: {x: 0.005735159, y: 0.24517988, z: 0.004301399}
+  m_Size: {x: 0.4, y: 0.05, z: 0.4}
+  m_Center: {x: 0, y: 0.04, z: 0}
 --- !u!54 &1447256288212296169
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -93,7 +94,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d181959c6e6794f48873fb64d7993fc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathSound: {fileID: 0}
+  eventPathDestructionSound: 
+  deathSound:
+  - {fileID: 0}
   shatterObject: {fileID: 0}
   deathFxPrefab: {fileID: 1721238331839892331, guid: 678964c46c2b4594681a75aa1faaad71, type: 3}
   fxSpawnParent: {fileID: 0}
@@ -149,6 +152,20 @@ MonoBehaviour:
     mischiefMeterPointsOnDestruction: 15
     damageToScoreMultiplier: 2
     bonusOnDestruction: 100
+--- !u!136 &5322413128052066104
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1447256288212296162}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.2
+  m_Height: 0.48282537
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.27, z: 0}
 --- !u!1001 &1420935086589185835
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -204,7 +221,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plant-2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8720162972794505756, guid: 2dbbe6c5683acc24d8e5d8d5078ab3c6, type: 3}
+    - {fileID: 1653011578405999714, guid: 2dbbe6c5683acc24d8e5d8d5078ab3c6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2dbbe6c5683acc24d8e5d8d5078ab3c6, type: 3}
 --- !u!4 &4956442915771277374 stripped
 Transform:

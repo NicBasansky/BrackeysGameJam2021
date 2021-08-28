@@ -79,7 +79,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00be4bcf2fc6ded439dd950b3e849714, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 50
   health: 0
 --- !u!114 &4944357077840776141
 MonoBehaviour:
@@ -93,12 +93,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d181959c6e6794f48873fb64d7993fc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathSound: {fileID: 0}
+  eventPathDestructionSound: 
+  deathSound:
+  - {fileID: 0}
   shatterObject: {fileID: 0}
   deathFxPrefab: {fileID: 1721238331839892331, guid: 678964c46c2b4594681a75aa1faaad71, type: 3}
   fxSpawnParent: {fileID: 0}
   meshesToOffOnDeath:
-  - {fileID: 0}
+  - {fileID: 217856943624584779}
   parentGOToOffChildrenOnDeath: {fileID: 0}
   shouldAutoDestroy: 1
 --- !u!114 &1269257034446921048
@@ -209,5 +211,10 @@ PrefabInstance:
 --- !u!4 &601109846246199473 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8325367190553217510, guid: 1cbfa8f9d7b482e4194b812e25c06e85, type: 3}
+  m_PrefabInstance: {fileID: 8925632404633377111}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &217856943624584779 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 8708779556720027420, guid: 1cbfa8f9d7b482e4194b812e25c06e85, type: 3}
   m_PrefabInstance: {fileID: 8925632404633377111}
   m_PrefabAsset: {fileID: 0}

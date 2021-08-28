@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4978353785530634809}
   - component: {fileID: 2889602028419040283}
   - component: {fileID: 5943706568077543330}
+  - component: {fileID: 2550005689468285027}
   m_Layer: 6
   m_Name: Paint Brush
   m_TagString: Untagged
@@ -79,7 +80,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d181959c6e6794f48873fb64d7993fc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathSound: {fileID: 0}
+  eventPathDestructionSound: 
+  deathSound:
+  - {fileID: 0}
   shatterObject: {fileID: 0}
   deathFxPrefab: {fileID: 1721238331839892331, guid: 678964c46c2b4594681a75aa1faaad71, type: 3}
   fxSpawnParent: {fileID: 0}
@@ -135,6 +138,20 @@ MonoBehaviour:
     mischiefMeterPointsOnDestruction: 15
     damageToScoreMultiplier: 2
     bonusOnDestruction: 100
+--- !u!64 &2550005689468285027
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8328565498462679258}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8811621466311810375, guid: c78123ca5fc9494419b47b08f694012c, type: 3}
 --- !u!1001 &5713320273156493412
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -190,7 +207,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Paint-Brush
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4013613541972730619, guid: 510e6c60357102f4aa0bde788653a632, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 510e6c60357102f4aa0bde788653a632, type: 3}
 --- !u!4 &5299442876290235708 stripped
 Transform:

@@ -49,8 +49,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.2161932, y: 0.0819034, z: 0.2134518}
-  m_Center: {x: 0.013702869, y: 0.034257323, z: 0.0041109025}
+  m_Size: {x: 0.19642639, y: 0.04682982, z: 0.2134518}
+  m_Center: {x: 0.010935783, y: 0.022651017, z: 0.0041109025}
 --- !u!54 &6003774186168057966
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -93,8 +93,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d181959c6e6794f48873fb64d7993fc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathSound: {fileID: 0}
-  deathFxPrefab: {fileID: 100010, guid: d8713a58d755d1a4cadbd1ad74492dd4, type: 3}
+  eventPathDestructionSound: 
+  deathSound:
+  - {fileID: 0}
+  shatterObject: {fileID: 0}
+  deathFxPrefab: {fileID: 1721238331839892331, guid: 678964c46c2b4594681a75aa1faaad71, type: 3}
   fxSpawnParent: {fileID: 0}
   meshesToOffOnDeath:
   - {fileID: 0}

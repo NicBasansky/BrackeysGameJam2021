@@ -176,6 +176,30 @@ PrefabInstance:
       propertyPath: shatterObject
       value: 
       objectReference: {fileID: 1831945205689418025}
+    - target: {fileID: 6125084732755241250, guid: 2eae573e2fd9d7b4db9390a81df14653, type: 3}
+      propertyPath: deathSound.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6125084732755241250, guid: 2eae573e2fd9d7b4db9390a81df14653, type: 3}
+      propertyPath: deathSound.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 9ba96bdcdbb13304592a9c6a34e52629, type: 3}
+    - target: {fileID: 6125084732755241250, guid: 2eae573e2fd9d7b4db9390a81df14653, type: 3}
+      propertyPath: deathSound.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: d387e47cda506824594ef2bbabbb5ea4, type: 3}
+    - target: {fileID: 6125084732755241250, guid: 2eae573e2fd9d7b4db9390a81df14653, type: 3}
+      propertyPath: deathSound.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 0aed61a702f888c4b85faee7e583827e, type: 3}
+    - target: {fileID: 6125084732755241250, guid: 2eae573e2fd9d7b4db9390a81df14653, type: 3}
+      propertyPath: deathSound.Array.data[3]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6125084732755241250, guid: 2eae573e2fd9d7b4db9390a81df14653, type: 3}
+      propertyPath: eventPathDestructionSound
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8991501070483546093, guid: 2eae573e2fd9d7b4db9390a81df14653, type: 3}
       propertyPath: m_IsActive
       value: 0

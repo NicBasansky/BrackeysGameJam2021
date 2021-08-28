@@ -104,6 +104,7 @@ GameObject:
   - component: {fileID: 8964038495600571812}
   - component: {fileID: 9126960009944512112}
   - component: {fileID: 9128279333697249594}
+  - component: {fileID: -283455424639856278}
   m_Layer: 0
   m_Name: FX_Grenade_Flash_01
   m_TagString: Untagged
@@ -4934,6 +4935,19 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!114 &-283455424639856278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8966010998056766054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1a46b8801e3d6443a5ea6337a04694e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyDelay: 5
 --- !u!1 &8966247904997195702
 GameObject:
   m_ObjectHideFlags: 0

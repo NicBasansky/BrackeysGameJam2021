@@ -7,6 +7,7 @@ namespace NicLib.Health
     public class DeathHandler : MonoBehaviour
     {
         [SerializeField] string eventPathDestructionSound; // need?
+        [SerializeField] AudioClip[] deathSound;
         [SerializeField] ShatterObject shatterObject;
 
         [SerializeField] GameObject deathFxPrefab;
@@ -59,15 +60,23 @@ namespace NicLib.Health
             {
                 fx.transform.parent = fxSpawnParent;
 
+
             }
+            fx.transform.position = transform.position;
         }
 
         private void PlayDeathSound()
         {
             if (eventPathDestructionSound != null)
             {
-                //AudioSource.PlayClipAtPoint(deathSound, transform.position);
                 FMODUnity.RuntimeManager.PlayOneShot("event:" + eventPathDestructionSound);
+            }
+            else if (deathSound.Length != 0)
+            {
+                int randomIndex = Random.Range(0, deathSound.Length + 1);
+                if (deathSound[randomIndex])
+                    AudioSource.PlayClipAtPoint(deathSound[randomIndex], transform.position);
+
             }
         }
         

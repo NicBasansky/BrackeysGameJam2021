@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 897157619783410775}
   - component: {fileID: 7024524436947972725}
   - component: {fileID: 1952798483200405964}
+  - component: {fileID: 8630439600375265325}
   m_Layer: 6
   m_Name: Mirror Little 1F
   m_TagString: Untagged
@@ -47,7 +48,7 @@ BoxCollider:
   m_GameObject: {fileID: 4247158673153902260}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.15315914, y: 0.12027168, z: 0.23263574}
   m_Center: {x: -0.012332439, y: -0.0068514347, z: 0.0027406216}
@@ -93,8 +94,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d181959c6e6794f48873fb64d7993fc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathSound: {fileID: 0}
-  deathFxPrefab: {fileID: 100010, guid: d8713a58d755d1a4cadbd1ad74492dd4, type: 3}
+  eventPathDestructionSound: 
+  deathSound:
+  - {fileID: 0}
+  shatterObject: {fileID: 0}
+  deathFxPrefab: {fileID: 1721238331839892331, guid: 678964c46c2b4594681a75aa1faaad71, type: 3}
   fxSpawnParent: {fileID: 0}
   meshesToOffOnDeath:
   - {fileID: 0}
@@ -148,6 +152,20 @@ MonoBehaviour:
     mischiefMeterPointsOnDestruction: 15
     damageToScoreMultiplier: 2
     bonusOnDestruction: 100
+--- !u!64 &8630439600375265325
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4247158673153902260}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5196645244315738591, guid: c73e0eadbf0ef134c8cd7e4a2d37f3f5, type: 3}
 --- !u!1001 &36300062189724913
 PrefabInstance:
   m_ObjectHideFlags: 0

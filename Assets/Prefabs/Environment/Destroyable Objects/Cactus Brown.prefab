@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 4049388237416569366}
   - component: {fileID: 6142090745608145972}
   - component: {fileID: 3411673394745266061}
+  - component: {fileID: 5223305604559348950}
   m_Layer: 6
   m_Name: Cactus Brown
   m_TagString: Untagged
@@ -47,10 +48,10 @@ BoxCollider:
   m_GameObject: {fileID: 1058901647786998005}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: 0.25941277, y: 0.27240562, z: 0.23775864}
-  m_Center: {x: 0.2620201, y: 1.6111016, z: -0.09528017}
+  m_Size: {x: 0.25941277, y: 0.24819636, z: 0.23775864}
+  m_Center: {x: 0.2620201, y: 1.6166037, z: -0.09528017}
 --- !u!54 &1058901647786998014
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -93,7 +94,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d181959c6e6794f48873fb64d7993fc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathSound: {fileID: 0}
+  eventPathDestructionSound: 
+  deathSound:
+  - {fileID: 0}
   shatterObject: {fileID: 0}
   deathFxPrefab: {fileID: 1721238331839892331, guid: 678964c46c2b4594681a75aa1faaad71, type: 3}
   fxSpawnParent: {fileID: 0}
@@ -149,6 +152,20 @@ MonoBehaviour:
     mischiefMeterPointsOnDestruction: 15
     damageToScoreMultiplier: 2
     bonusOnDestruction: 100
+--- !u!64 &5223305604559348950
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1058901647786998005}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1001 &1498762511293485052
 PrefabInstance:
   m_ObjectHideFlags: 0

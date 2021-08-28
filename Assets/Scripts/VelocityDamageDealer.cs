@@ -28,7 +28,7 @@ public class VelocityDamageDealer : MonoBehaviour
     {
         if (collision.transform.gameObject.layer == interactableLayerIndex)
         {
-            if (rb.velocity.magnitude >= minVelocityForDamage)
+            if (collision.rigidbody.velocity.magnitude >= minVelocityForDamage)
             {
                 // TODO find out what the min velocity should be in order to start dealing any damage
                 Health health = GetComponent<Health>();
