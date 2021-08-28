@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using NicLib.Health;
+using System;
 
 [RequireComponent(typeof(Rigidbody))]
 public class VelocityDamageDealer : MonoBehaviour
@@ -22,16 +23,14 @@ public class VelocityDamageDealer : MonoBehaviour
         
     }
 
-    
-
     void OnCollisionEnter(Collision collision)
     {
         if (collision.transform.gameObject.layer == interactableLayerIndex)
         {
-            if (collision.rigidbody.velocity.magnitude >= minVelocityForDamage)
+            if (rb.velocity.magnitude >= minVelocityForDamage)
             {
-                // TODO find out what the min velocity should be in order to start dealing any damage
                 Health health = GetComponent<Health>();
+                // TODO find out what the min velocity should be in order to start dealing any damage
                 float damage = rb.velocity.magnitude * damageToVelocityMultiplier;
                 health.AffectHealth(-damage);
                 FMODUnity.RuntimeManager.PlayOneShot("event:/sfx/destroy/explosives");
@@ -52,4 +51,5 @@ public class VelocityDamageDealer : MonoBehaviour
         // AudioTriggerManager.Instance.PlayPlayerImpactSound(isHighVelocity);
        
     }
+
 }

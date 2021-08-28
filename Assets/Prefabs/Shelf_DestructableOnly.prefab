@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7858578869909711253}
   - component: {fileID: 1687411448824375852}
   - component: {fileID: 3928734603553755490}
+  - component: {fileID: 451098510016345602}
   m_Layer: 6
   m_Name: Shelf_DestructableOnly
   m_TagString: Untagged
@@ -135,6 +136,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0057778, y: 0.10226011, z: 0.5451086}
   m_Center: {x: 0.0055019855, y: 0.03751278, z: 0.28026626}
+--- !u!65 &451098510016345602
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3928168386948799828}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.041139, y: 0.20383483, z: 0.52536345}
+  m_Center: {x: 0.00000011920929, y: 0.05103621, z: 0.23731828}
 --- !u!1 &8991501070483546093
 GameObject:
   m_ObjectHideFlags: 0

@@ -49,8 +49,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.5998745, y: 0.02435109, z: 0.5998745}
-  m_Center: {x: 0, y: 0.032887027, z: 0}
+  m_Size: {x: 0.56336784, y: 0.04536958, z: 0.5666876}
+  m_Center: {x: 0.0027656555, y: 0.022377782, z: 0.0022125244}
 --- !u!54 &3357514529166072132
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -133,6 +133,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageToVelocityMultiplier: 5
   minVelocityForDamage: 2
+  hasTrigger: 0
   interactableLayerIndex: 6
 --- !u!114 &1112673042614595127
 MonoBehaviour:
@@ -206,7 +207,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chessboard
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3047666834211316729, guid: 7c88a223197b5cd4785c6491aebfecc7, type: 3}
+    - {fileID: -377280839495182610, guid: 7c88a223197b5cd4785c6491aebfecc7, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7c88a223197b5cd4785c6491aebfecc7, type: 3}
 --- !u!4 &2258314126813283070 stripped
 Transform:

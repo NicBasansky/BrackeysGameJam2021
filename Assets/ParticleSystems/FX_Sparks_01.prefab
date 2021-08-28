@@ -4885,6 +4885,7 @@ GameObject:
   - component: {fileID: 688688080006339976}
   - component: {fileID: 819470201401853662}
   - component: {fileID: 819053838766057260}
+  - component: {fileID: 1524241571444786932}
   m_Layer: 0
   m_Name: FX_Sparks_01
   m_TagString: Untagged
@@ -9750,6 +9751,19 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!114 &1524241571444786932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 691968379759644604}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1a46b8801e3d6443a5ea6337a04694e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyDelay: 5
 --- !u!1 &692286084718144098
 GameObject:
   m_ObjectHideFlags: 0

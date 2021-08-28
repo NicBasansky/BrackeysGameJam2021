@@ -6,7 +6,7 @@ namespace NicLib.Health
     [RequireComponent(typeof(DeathHandler))]
     public class Health : MonoBehaviour
     {
-        [SerializeField] float maxHealth = 100f;
+        [SerializeField] float maxHealth = 20f;
         [SerializeField] float health;
 
         bool isDead = false;
@@ -92,6 +92,8 @@ namespace NicLib.Health
             {
                 deathHandler.Kill();     
             }
+
+            
         }
 
     }

@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 5465543716608130023}
   - component: {fileID: 7970273720710209414}
   - component: {fileID: 2907785237121486746}
-  - component: {fileID: 9032579663703890191}
   - component: {fileID: 1176966178440007469}
   - component: {fileID: 7651836344138828948}
   m_Layer: 6
@@ -79,7 +78,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00be4bcf2fc6ded439dd950b3e849714, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 30
   health: 0
 --- !u!114 &2907785237121486746
 MonoBehaviour:
@@ -98,27 +97,14 @@ MonoBehaviour:
   - {fileID: 0}
   shatterObject: {fileID: 0}
   deathFxPrefab: {fileID: 1721238331839892331, guid: 678964c46c2b4594681a75aa1faaad71, type: 3}
+  extraDeathFxPrefabs:
+  - {fileID: 691968379759644604, guid: f6e2507ef9badfe4b9ce4604a039b578, type: 3}
   fxSpawnParent: {fileID: 0}
   meshesToOffOnDeath:
   - {fileID: 0}
   parentGOToOffChildrenOnDeath: {fileID: 0}
   shouldAutoDestroy: 1
---- !u!114 &9032579663703890191
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5465543716608130028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68d6779a7d9a75241b945076e28ed7ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectHolder: {fileID: 0}
-  pickedUp: 0
-  breakForce: 35
-  waitOnPickup: 0.2
+  shouldNeverDespawn: 1
 --- !u!114 &1176966178440007469
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,10 +133,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   properties:
-    moneyValue: 0
-    mischiefMeterPointsOnDestruction: 15
+    moneyValue: 40
+    mischiefMeterPointsOnDestruction: 8
     damageToScoreMultiplier: 2
-    bonusOnDestruction: 100
+    bonusOnDestruction: 200
 --- !u!1001 &1947632054450989076
 PrefabInstance:
   m_ObjectHideFlags: 0

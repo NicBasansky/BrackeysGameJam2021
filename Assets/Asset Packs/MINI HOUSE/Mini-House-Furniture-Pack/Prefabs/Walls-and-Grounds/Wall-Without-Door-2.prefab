@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 8229395332633578144}
   - component: {fileID: 5015731121534452997}
   - component: {fileID: 7097536297517855183}
+  - component: {fileID: 3957787460476184492}
+  - component: {fileID: 922045818309770678}
   m_Layer: 0
   m_Name: Wall-Without-Door-2
   m_TagString: Untagged
@@ -55,6 +57,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -79,3 +82,30 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3957787460476184492
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8754856769396772890}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.51432, y: 2, z: 0.20000014}
+  m_Center: {x: 0.7428401, y: 1, z: 0.100000024}
+--- !u!65 &922045818309770678
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8754856769396772890}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.49956143, y: 2, z: 0.20000014}
+  m_Center: {x: -0.7502193, y: 1, z: 0.100000024}

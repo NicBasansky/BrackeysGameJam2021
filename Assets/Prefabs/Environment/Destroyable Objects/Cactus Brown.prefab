@@ -50,8 +50,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: 0.25941277, y: 0.24819636, z: 0.23775864}
-  m_Center: {x: 0.2620201, y: 1.6166037, z: -0.09528017}
+  m_Size: {x: 0.18853188, y: 0.13040972, z: 0.1892891}
+  m_Center: {x: 0.258893, y: 1.5577104, z: -0.10127401}
 --- !u!54 &1058901647786998014
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -99,11 +99,13 @@ MonoBehaviour:
   - {fileID: 0}
   shatterObject: {fileID: 0}
   deathFxPrefab: {fileID: 1721238331839892331, guid: 678964c46c2b4594681a75aa1faaad71, type: 3}
+  extraDeathFxPrefabs: []
   fxSpawnParent: {fileID: 0}
   meshesToOffOnDeath:
   - {fileID: 0}
   parentGOToOffChildrenOnDeath: {fileID: 0}
   shouldAutoDestroy: 1
+  shouldNeverDespawn: 0
 --- !u!114 &4049388237416569366
 MonoBehaviour:
   m_ObjectHideFlags: 0

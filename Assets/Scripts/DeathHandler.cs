@@ -11,12 +11,14 @@ namespace NicLib.Health
         [SerializeField] ShatterObject shatterObject;
 
         [SerializeField] GameObject deathFxPrefab;
+        [SerializeField] GameObject[] extraDeathFxPrefabs;
         [SerializeField] Transform fxSpawnParent;
         
         [SerializeField] MeshRenderer[] meshesToOffOnDeath;
         [SerializeField] Transform parentGOToOffChildrenOnDeath;
 
         [SerializeField] bool shouldAutoDestroy = true;
+        [SerializeField] bool shouldNeverDespawn = false;
 
         ScoreCalculator scoreCalculator;
 
@@ -24,17 +26,22 @@ namespace NicLib.Health
         public void Kill()
         {
             SpawnDeathFX();
-            SetEnableMeshRenderers(false);
             SetAllChildrenActive(false);
             PlayDeathSound();
+            if (!shouldNeverDespawn)
+            {
+                SetEnableMeshRenderers(false);
+                
             
+            }
+
             if (shatterObject)
             {
                 shatterObject.Shatter();
 
             }
 
-            if (shouldAutoDestroy)
+            if (shouldAutoDestroy && !shouldNeverDespawn)
             {
                 Destroy(this.gameObject, 2f);
             }
@@ -50,7 +57,7 @@ namespace NicLib.Health
         
         public void SpawnDeathFX()
         {
-            if (deathFxPrefab == null || fxSpawnParent == null)
+            if (deathFxPrefab == null) 
             {
                 Debug.Log("Death FX properties are null");
                 return;
@@ -59,21 +66,31 @@ namespace NicLib.Health
             if (fxSpawnParent)
             {
                 fx.transform.parent = fxSpawnParent;
-
-
             }
-            fx.transform.position = transform.position;
+            //fx.transform.position = transform.position;
+            
+            
+            foreach(GameObject go in extraDeathFxPrefabs)
+            {
+                GameObject extraFx = Instantiate(go, transform.position, Quaternion.identity);
+                //if (fxSpawnParent)
+                {
+                    extraFx.transform.parent = transform;//xSpawnParent;
+                }
+            }
+            
+
         }
 
         private void PlayDeathSound()
         {
-            if (eventPathDestructionSound != null)
+            if (eventPathDestructionSound != string.Empty)
             {
                 FMODUnity.RuntimeManager.PlayOneShot("event:" + eventPathDestructionSound);
             }
             else if (deathSound.Length != 0)
             {
-                int randomIndex = Random.Range(0, deathSound.Length + 1);
+                int randomIndex = Random.Range(0, deathSound.Length - 1);
                 if (deathSound[randomIndex])
                     AudioSource.PlayClipAtPoint(deathSound[randomIndex], transform.position);
 
