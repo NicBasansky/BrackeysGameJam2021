@@ -49,8 +49,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.44092047, y: 0.44366094, z: 0.19974875}
-  m_Center: {x: -0.000000059604645, y: -0.004110828, z: -0.0027405024}
+  m_Size: {x: 0.40300548, y: 0.39799076, z: 0.15407872}
+  m_Center: {x: 0.0017233491, y: -0.00023314357, z: 0.00027549267}
 --- !u!54 &855342908809470504
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -59,7 +59,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 855342908809470499}
   serializedVersion: 2
-  m_Mass: 10
+  m_Mass: 3
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -79,7 +79,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00be4bcf2fc6ded439dd950b3e849714, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 30
   health: 0
 --- !u!114 &7520392976132413013
 MonoBehaviour:
@@ -98,11 +98,13 @@ MonoBehaviour:
   - {fileID: 0}
   shatterObject: {fileID: 0}
   deathFxPrefab: {fileID: 1721238331839892331, guid: 678964c46c2b4594681a75aa1faaad71, type: 3}
+  extraDeathFxPrefabs: []
   fxSpawnParent: {fileID: 0}
   meshesToOffOnDeath:
   - {fileID: 0}
   parentGOToOffChildrenOnDeath: {fileID: 0}
   shouldAutoDestroy: 1
+  shouldNeverDespawn: 0
 --- !u!114 &4421797669514215616
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -132,8 +134,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageToVelocityMultiplier: 5
-  minVelocityForDamage: 2
+  shouldReleaseRBConstraintsOnImpact: 0
   interactableLayerIndex: 6
+  groundLayerIndex: 7
 --- !u!114 &3042043320531866971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,8 +150,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   properties:
-    moneyValue: 0
-    mischiefMeterPointsOnDestruction: 15
+    moneyValue: 10
+    mischiefMeterPointsOnDestruction: 2
     damageToScoreMultiplier: 2
     bonusOnDestruction: 100
 --- !u!1001 &3136950921348446436

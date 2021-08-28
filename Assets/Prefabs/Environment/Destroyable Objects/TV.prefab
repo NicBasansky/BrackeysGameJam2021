@@ -49,8 +49,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.3782015, y: 0.8993018, z: 0.13945532}
-  m_Center: {x: 0.0027403831, y: 0.84847486, z: -0.00000023841858}
+  m_Size: {x: 1.3782015, y: 0.87645155, z: 0.13945532}
+  m_Center: {x: 0.0027403831, y: 0.8599, z: -0.00000023841858}
 --- !u!54 &4984245188303547244
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -135,6 +135,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageToVelocityMultiplier: 5
   minVelocityForDamage: 2
+  shouldReleaseRBConstraintsOnImpact: 0
   interactableLayerIndex: 6
 --- !u!114 &7260597576382176287
 MonoBehaviour:

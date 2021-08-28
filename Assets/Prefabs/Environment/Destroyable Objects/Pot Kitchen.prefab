@@ -49,8 +49,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.35358906, y: 0.23204112, z: 0.3038646}
-  m_Center: {x: 0.0027623177, y: 0.1022104, z: -0.000000059604645}
+  m_Size: {x: 0.35358906, y: 0.2229011, z: 0.3038646}
+  m_Center: {x: 0.0027623177, y: 0.10678041, z: -0.000000059604645}
 --- !u!54 &8648090023452898349
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -93,14 +93,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d181959c6e6794f48873fb64d7993fc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathSound: {fileID: 0}
+  eventPathDestructionSound: 
+  deathSound:
+  - {fileID: 0}
   shatterObject: {fileID: 0}
   deathFxPrefab: {fileID: 1721238331839892331, guid: 678964c46c2b4594681a75aa1faaad71, type: 3}
+  extraDeathFxPrefabs: []
   fxSpawnParent: {fileID: 0}
   meshesToOffOnDeath:
   - {fileID: 0}
   parentGOToOffChildrenOnDeath: {fileID: 0}
   shouldAutoDestroy: 1
+  shouldNeverDespawn: 0
 --- !u!114 &5658658973578237637
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -131,6 +135,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageToVelocityMultiplier: 5
   minVelocityForDamage: 2
+  shouldReleaseRBConstraintsOnImpact: 0
   interactableLayerIndex: 6
 --- !u!114 &6479971361125581662
 MonoBehaviour:

@@ -49,8 +49,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.30110252, y: 0.38831764, z: 0.069057226}
-  m_Center: {x: -0.0013810992, y: 0.002052635, z: 0.001381278}
+  m_Size: {x: 0.25756603, y: 0.34009254, z: 0.019492388}
+  m_Center: {x: 0.00029340386, y: 0.00071305037, z: -0.00062811375}
 --- !u!54 &6072621941784984150
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -93,14 +93,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d181959c6e6794f48873fb64d7993fc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathSound: {fileID: 0}
+  eventPathDestructionSound: 
+  deathSound:
+  - {fileID: 0}
   shatterObject: {fileID: 0}
   deathFxPrefab: {fileID: 1721238331839892331, guid: 678964c46c2b4594681a75aa1faaad71, type: 3}
+  extraDeathFxPrefabs: []
   fxSpawnParent: {fileID: 0}
   meshesToOffOnDeath:
   - {fileID: 0}
   parentGOToOffChildrenOnDeath: {fileID: 0}
   shouldAutoDestroy: 1
+  shouldNeverDespawn: 0
 --- !u!114 &7117342377569769662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -145,8 +149,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   properties:
-    moneyValue: 0
-    mischiefMeterPointsOnDestruction: 15
+    moneyValue: 8
+    mischiefMeterPointsOnDestruction: 6
     damageToScoreMultiplier: 2
     bonusOnDestruction: 100
 --- !u!1001 &3069196432645054072

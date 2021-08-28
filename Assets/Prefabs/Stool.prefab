@@ -49,8 +49,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.27262926, y: 0.3908273, z: 0.24308026}
+  m_Center: {x: 0, y: 0.18638867, z: 0.001136601}
 --- !u!54 &3928168386948799839
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -79,7 +79,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00be4bcf2fc6ded439dd950b3e849714, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 30
   health: 0
 --- !u!114 &6125084732755241250
 MonoBehaviour:
@@ -93,14 +93,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d181959c6e6794f48873fb64d7993fc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathSound: {fileID: 0}
+  eventPathDestructionSound: 
+  deathSound:
+  - {fileID: 0}
   shatterObject: {fileID: 0}
   deathFxPrefab: {fileID: 1721238331839892331, guid: 678964c46c2b4594681a75aa1faaad71, type: 3}
+  extraDeathFxPrefabs: []
   fxSpawnParent: {fileID: 0}
   meshesToOffOnDeath:
-  - {fileID: 0}
+  - {fileID: 1340020108129492132}
   parentGOToOffChildrenOnDeath: {fileID: 0}
   shouldAutoDestroy: 1
+  shouldNeverDespawn: 0
 --- !u!114 &1790443447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130,8 +134,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageToVelocityMultiplier: 5
-  minVelocityForDamage: 2
+  shouldReleaseRBConstraintsOnImpact: 0
   interactableLayerIndex: 6
+  groundLayerIndex: 7
 --- !u!114 &1687411448824375852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -145,8 +150,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   properties:
-    moneyValue: 0
-    mischiefMeterPointsOnDestruction: 15
+    moneyValue: 20
+    mischiefMeterPointsOnDestruction: 8
     damageToScoreMultiplier: 2
     bonusOnDestruction: 100
 --- !u!1001 &7657097854192417720
@@ -209,5 +214,10 @@ PrefabInstance:
 --- !u!4 &1858540463105421918 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8325367190553217510, guid: 1cbfa8f9d7b482e4194b812e25c06e85, type: 3}
+  m_PrefabInstance: {fileID: 7657097854192417720}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &1340020108129492132 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 8708779556720027420, guid: 1cbfa8f9d7b482e4194b812e25c06e85, type: 3}
   m_PrefabInstance: {fileID: 7657097854192417720}
   m_PrefabAsset: {fileID: 0}

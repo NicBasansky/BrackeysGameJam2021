@@ -50,8 +50,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: 0.18853188, y: 0.13040972, z: 0.1892891}
-  m_Center: {x: 0.258893, y: 1.5577104, z: -0.10127401}
+  m_Size: {x: 0.18853188, y: 0.12792063, z: 0.1892891}
+  m_Center: {x: 0, y: 0.06617689, z: 0}
 --- !u!54 &1058901647786998014
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -80,7 +80,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00be4bcf2fc6ded439dd950b3e849714, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 20
   health: 0
 --- !u!114 &7868629920516181123
 MonoBehaviour:
@@ -135,8 +135,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageToVelocityMultiplier: 5
-  minVelocityForDamage: 2
+  shouldReleaseRBConstraintsOnImpact: 0
   interactableLayerIndex: 6
+  groundLayerIndex: 7
 --- !u!114 &3411673394745266061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,10 +151,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   properties:
-    moneyValue: 0
-    mischiefMeterPointsOnDestruction: 15
+    moneyValue: 10
+    mischiefMeterPointsOnDestruction: 5
     damageToScoreMultiplier: 2
-    bonusOnDestruction: 100
+    bonusOnDestruction: 50
 --- !u!64 &5223305604559348950
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -185,15 +186,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7796999735450476323, guid: ec9ec70cebec74e4b997b3750e5362c2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.25893086
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7796999735450476323, guid: ec9ec70cebec74e4b997b3750e5362c2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.49423
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7796999735450476323, guid: ec9ec70cebec74e4b997b3750e5362c2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.10191724
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7796999735450476323, guid: ec9ec70cebec74e4b997b3750e5362c2, type: 3}
       propertyPath: m_LocalRotation.w

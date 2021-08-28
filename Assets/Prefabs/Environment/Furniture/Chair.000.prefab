@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8600032881842120632
+--- !u!1 &814826556732978067
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,46 +8,48 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7312549514370062243}
-  - component: {fileID: 1350136469774425407}
-  - component: {fileID: 8780106011671094769}
-  - component: {fileID: 2139177307928663484}
-  m_Layer: 0
-  m_Name: Chair.000 (1)
+  - component: {fileID: 1707512447852361821}
+  - component: {fileID: 4528153571664563624}
+  - component: {fileID: 4902862184539735649}
+  - component: {fileID: 1032692316981153684}
+  - component: {fileID: 2100422127310447266}
+  - component: {fileID: 5670019522789402132}
+  m_Layer: 6
+  m_Name: Chair.000
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7312549514370062243
+--- !u!4 &1707512447852361821
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8600032881842120632}
-  m_LocalRotation: {x: 0, y: -0.31720835, z: -0, w: 0.94835585}
-  m_LocalPosition: {x: -0, y: 0, z: 0.73175603}
+  m_GameObject: {fileID: 814826556732978067}
+  m_LocalRotation: {x: -0, y: 0.81316227, z: -0, w: 0.5820371}
+  m_LocalPosition: {x: 0.603, y: 0, z: 1.001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &1350136469774425407
+  m_LocalEulerAnglesHint: {x: 0, y: 108.812, z: 0}
+--- !u!33 &4528153571664563624
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8600032881842120632}
+  m_GameObject: {fileID: 814826556732978067}
   m_Mesh: {fileID: -2886934026880775131, guid: 5686da4c3e85b6b40a7567faa385e56d, type: 3}
---- !u!23 &8780106011671094769
+--- !u!23 &4902862184539735649
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8600032881842120632}
+  m_GameObject: {fileID: 814826556732978067}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -60,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 38b6df174e4fbe849b922d8d22d6e5cd, type: 2}
+  - {fileID: 2100000, guid: c52ac1a0ec72a44459bb440c6a603458, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -82,16 +84,45 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &2139177307928663484
+--- !u!65 &1032692316981153684
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8600032881842120632}
+  m_GameObject: {fileID: 814826556732978067}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.8414334, y: 1.3254782, z: 0.89231306}
-  m_Center: {x: 0, y: 0.65603787, z: 0.031511456}
+  m_Size: {x: 0.8414336, y: 0.61197716, z: 0.7811778}
+  m_Center: {x: -0.000000018544293, y: 0.29928726, z: 0.08707892}
+--- !u!65 &2100422127310447266
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814826556732978067}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.66831166, y: 0.68753403, z: 0.2126876}
+  m_Center: {x: -0.0002906952, y: 0.9584743, z: 0.3713232}
+--- !u!54 &5670019522789402132
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814826556732978067}
+  serializedVersion: 2
+  m_Mass: 30
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
