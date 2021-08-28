@@ -18,6 +18,8 @@ public class Timer : MonoBehaviour
         {
             timerSeconds = 0;
             Debug.Log("Timer has run out!");
+            GameOverManager.Instance.GameOver();
+            hUD.ShowEndScreen(true);
         }
         DisplayTimer(timerSeconds);
     }

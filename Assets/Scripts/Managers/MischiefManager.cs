@@ -30,6 +30,7 @@ public class MischiefManager : MMSingleton<MischiefManager>
             mischiefAmount = Mathf.Min(maxMischiefAmount, mischiefAmount);
             // TODO call event that Max Mischief if reached
             Debug.Log("Maximum Mischief Reached!");
+            GameOverManager.Instance.GameOver();
         }
         
         hUD.UpdateMischiefMeterUI();

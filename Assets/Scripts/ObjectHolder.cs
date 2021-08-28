@@ -43,6 +43,12 @@ public class ObjectHolder : MonoBehaviour
     public float rotationSpeed = 100f;
     Quaternion lookRotation;
 
+    [Header("Sound")]
+    [SerializeField] float minVelocityForBabyBoomSound = 9f;
+    [Range(0, 100)]
+    [SerializeField] int percentChanceToPlayThrowSound = 40;
+    [SerializeField] int percentChanceForBabyBoomSound = 40;
+
     void Start()
     {
         mainCamera = Camera.main;
@@ -105,7 +111,23 @@ public class ObjectHolder : MonoBehaviour
                 ExertForce();
                 BreakConnection();
             }
-            FMODUnity.RuntimeManager.PlayOneShot("event:/sfx/baby/throw");
+
+            //40% of the time play the throw sound
+            if (UnityEngine.Random.Range(0, 100) < percentChanceToPlayThrowSound)
+            {
+                // even a smaller chance to get the boom noise
+                if (UnityEngine.Random.Range(0, 100) < percentChanceForBabyBoomSound)
+                {
+                    AudioTriggerManager.Instance.PlayBabyThrowSound(true);
+
+                }
+                else
+                {
+                    AudioTriggerManager.Instance.PlayBabyThrowSound(false);
+                }
+
+                //FMODUnity.RuntimeManager.PlayOneShot("event:/sfx/baby/throw");
+            }
             throwingPercent = 0f;
             windUp = false;
         }

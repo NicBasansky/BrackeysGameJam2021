@@ -7,6 +7,7 @@ namespace NicLib.Health
     public class DeathHandler : MonoBehaviour
     {
         [SerializeField] AudioClip deathSound; // need?
+        [SerializeField] ShatterObject shatterObject;
 
         [SerializeField] GameObject deathFxPrefab;
         [SerializeField] Transform fxSpawnParent;
@@ -25,6 +26,12 @@ namespace NicLib.Health
             SetEnableMeshRenderers(false);
             SetAllChildrenActive(false);
             PlayDeathSound();
+            
+            if (shatterObject)
+            {
+                shatterObject.Shatter();
+
+            }
 
             if (shouldAutoDestroy)
             {
@@ -48,7 +55,11 @@ namespace NicLib.Health
                 return;
             }
             GameObject fx = Instantiate(deathFxPrefab, transform.position, Quaternion.identity);
-            fx.transform.parent = fxSpawnParent;
+            if (fxSpawnParent)
+            {
+                fx.transform.parent = fxSpawnParent;
+
+            }
         }
 
         private void PlayDeathSound()
@@ -65,7 +76,8 @@ namespace NicLib.Health
             if (meshesToOffOnDeath.Length == 0) return;
             foreach (MeshRenderer o in meshesToOffOnDeath)
             {
-                o.enabled = enabled;
+                if (o != null)
+                    o.enabled = enabled;
             }
         }
 

@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 4675545279665174856}
   - component: {fileID: 3309468912073994090}
   - component: {fileID: 6307357717822385363}
+  - component: {fileID: 2477642612355860301}
   m_Layer: 6
   m_Name: Makeup-desk
   m_TagString: Untagged
@@ -47,7 +48,7 @@ BoxCollider:
   m_GameObject: {fileID: 8530231099421694891}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1.3480544, y: 1.001107, z: 0.51567316}
   m_Center: {x: -0.0068514347, y: 0.46808684, z: 0.00052571297}
@@ -59,7 +60,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8530231099421694891}
   serializedVersion: 2
-  m_Mass: 10
+  m_Mass: 20
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -94,6 +95,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathSound: {fileID: 0}
+  shatterObject: {fileID: 0}
   deathFxPrefab: {fileID: 100010, guid: d8713a58d755d1a4cadbd1ad74492dd4, type: 3}
   fxSpawnParent: {fileID: 0}
   meshesToOffOnDeath:
@@ -148,6 +150,20 @@ MonoBehaviour:
     mischiefMeterPointsOnDestruction: 15
     damageToScoreMultiplier: 2
     bonusOnDestruction: 100
+--- !u!64 &2477642612355860301
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8530231099421694891}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1001 &9156751112430743286
 PrefabInstance:
   m_ObjectHideFlags: 0
