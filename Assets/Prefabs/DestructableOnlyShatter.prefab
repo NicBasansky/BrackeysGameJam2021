@@ -119,6 +119,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DestructableOnlyShatter
       objectReference: {fileID: 0}
+    - target: {fileID: 3928168386948799828, guid: 2eae573e2fd9d7b4db9390a81df14653, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3928168386948799834, guid: 2eae573e2fd9d7b4db9390a81df14653, type: 3}
       propertyPath: m_Size.x
       value: 0.2845354
@@ -149,7 +153,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3928168386948799835, guid: 2eae573e2fd9d7b4db9390a81df14653, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 2.52
       objectReference: {fileID: 0}
     - target: {fileID: 3928168386948799835, guid: 2eae573e2fd9d7b4db9390a81df14653, type: 3}
       propertyPath: m_LocalPosition.y
@@ -157,7 +161,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3928168386948799835, guid: 2eae573e2fd9d7b4db9390a81df14653, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 2.09
       objectReference: {fileID: 0}
     - target: {fileID: 3928168386948799835, guid: 2eae573e2fd9d7b4db9390a81df14653, type: 3}
       propertyPath: m_LocalRotation.w
@@ -189,7 +193,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3928168386948799839, guid: 2eae573e2fd9d7b4db9390a81df14653, type: 3}
       propertyPath: m_Constraints
-      value: 14
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6125084732755241250, guid: 2eae573e2fd9d7b4db9390a81df14653, type: 3}
       propertyPath: deathFxPrefab

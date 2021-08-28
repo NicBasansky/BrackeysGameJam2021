@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2907785237121486746}
   - component: {fileID: 1176966178440007469}
   - component: {fileID: 7651836344138828948}
+  - component: {fileID: 7796100030222434622}
   m_Layer: 6
   m_Name: Floor Lamp Corridor 1F
   m_TagString: Untagged
@@ -48,8 +49,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.5389384, y: 1.3620186, z: 0.538939}
-  m_Center: {x: -0.008538306, y: 0.6489012, z: -0.0017073154}
+  m_Size: {x: 0.09006333, y: 1.2847004, z: 0.08147335}
+  m_Center: {x: 0.0011264086, y: 0.6875603, z: 0.005809784}
 --- !u!54 &5465543716608130023
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -137,6 +138,19 @@ MonoBehaviour:
     mischiefMeterPointsOnDestruction: 8
     damageToScoreMultiplier: 2
     bonusOnDestruction: 200
+--- !u!65 &7796100030222434622
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5465543716608130028}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.35138643, y: 0.03137505, z: 0.3385005}
+  m_Center: {x: -0.0064432025, y: 0.018255651, z: -0.006443262}
 --- !u!1001 &1947632054450989076
 PrefabInstance:
   m_ObjectHideFlags: 0

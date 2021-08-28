@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 8530231099421694880}
   - component: {fileID: 5991174299621179329}
   - component: {fileID: 1576950037740449757}
-  - component: {fileID: 4675545279665174856}
   - component: {fileID: 3309468912073994090}
   - component: {fileID: 6307357717822385363}
   - component: {fileID: 2477642612355860301}
@@ -85,27 +84,13 @@ MonoBehaviour:
   - {fileID: 0}
   shatterObject: {fileID: 0}
   deathFxPrefab: {fileID: 100010, guid: d8713a58d755d1a4cadbd1ad74492dd4, type: 3}
+  extraDeathFxPrefabs: []
   fxSpawnParent: {fileID: 0}
   meshesToOffOnDeath:
   - {fileID: 0}
   parentGOToOffChildrenOnDeath: {fileID: 0}
   shouldAutoDestroy: 1
---- !u!114 &4675545279665174856
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8530231099421694891}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68d6779a7d9a75241b945076e28ed7ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectHolder: {fileID: 0}
-  pickedUp: 0
-  breakForce: 35
-  waitOnPickup: 0.2
+  shouldNeverDespawn: 0
 --- !u!114 &3309468912073994090
 MonoBehaviour:
   m_ObjectHideFlags: 0
