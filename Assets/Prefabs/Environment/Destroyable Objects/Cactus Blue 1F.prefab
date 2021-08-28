@@ -79,7 +79,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00be4bcf2fc6ded439dd950b3e849714, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 20
   health: 0
 --- !u!114 &8703897772962816915
 MonoBehaviour:
@@ -93,14 +93,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d181959c6e6794f48873fb64d7993fc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathSound: {fileID: 0}
+  eventPathDestructionSound: 
+  deathSound:
+  - {fileID: 0}
   shatterObject: {fileID: 0}
   deathFxPrefab: {fileID: 1721238331839892331, guid: 678964c46c2b4594681a75aa1faaad71, type: 3}
+  extraDeathFxPrefabs: []
   fxSpawnParent: {fileID: 0}
   meshesToOffOnDeath:
   - {fileID: 0}
   parentGOToOffChildrenOnDeath: {fileID: 0}
   shouldAutoDestroy: 1
+  shouldNeverDespawn: 0
 --- !u!114 &3299688221356569862
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130,8 +134,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageToVelocityMultiplier: 5
-  minVelocityForDamage: 2
+  shouldReleaseRBConstraintsOnImpact: 0
   interactableLayerIndex: 6
+  groundLayerIndex: 7
 --- !u!114 &4224441535213789341
 MonoBehaviour:
   m_ObjectHideFlags: 0

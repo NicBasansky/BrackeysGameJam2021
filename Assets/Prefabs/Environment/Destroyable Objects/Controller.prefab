@@ -79,7 +79,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00be4bcf2fc6ded439dd950b3e849714, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 30
   health: 0
 --- !u!114 &8933903219038578989
 MonoBehaviour:
@@ -98,11 +98,13 @@ MonoBehaviour:
   - {fileID: 0}
   shatterObject: {fileID: 0}
   deathFxPrefab: {fileID: 1721238331839892331, guid: 678964c46c2b4594681a75aa1faaad71, type: 3}
+  extraDeathFxPrefabs: []
   fxSpawnParent: {fileID: 0}
   meshesToOffOnDeath:
   - {fileID: 0}
   parentGOToOffChildrenOnDeath: {fileID: 0}
   shouldAutoDestroy: 1
+  shouldNeverDespawn: 0
 --- !u!114 &3385358611390660536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,10 +149,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   properties:
-    moneyValue: 0
+    moneyValue: 80
     mischiefMeterPointsOnDestruction: 15
     damageToScoreMultiplier: 2
-    bonusOnDestruction: 100
+    bonusOnDestruction: 150
 --- !u!1001 &8936273368208137240
 PrefabInstance:
   m_ObjectHideFlags: 0

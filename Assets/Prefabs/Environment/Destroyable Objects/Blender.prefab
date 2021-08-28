@@ -32,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 6140776439413252290}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 12.006, y: -3.011944, z: -1.0463903}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 2006064912950472115}
   m_Father: {fileID: 0}
@@ -49,8 +49,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.10884094, y: 0.16139483, z: 0.117979586}
+  m_Center: {x: 0, y: 0.081118464, z: 0.000000029802322}
 --- !u!54 &6140776439413252297
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -79,7 +79,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00be4bcf2fc6ded439dd950b3e849714, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 30
   health: 0
 --- !u!114 &3943868957112095924
 MonoBehaviour:
@@ -93,14 +93,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d181959c6e6794f48873fb64d7993fc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathSound: {fileID: 0}
+  eventPathDestructionSound: 
+  deathSound:
+  - {fileID: 0}
   shatterObject: {fileID: 0}
-  deathFxPrefab: {fileID: 1721238331839892331, guid: 678964c46c2b4594681a75aa1faaad71, type: 3}
+  deathFxPrefab: {fileID: 8966010998056766054, guid: 093afb1df4e03ee4eb2391a2521993be, type: 3}
+  extraDeathFxPrefabs:
+  - {fileID: 691968379759644604, guid: f6e2507ef9badfe4b9ce4604a039b578, type: 3}
   fxSpawnParent: {fileID: 0}
   meshesToOffOnDeath:
   - {fileID: 0}
   parentGOToOffChildrenOnDeath: {fileID: 0}
   shouldAutoDestroy: 1
+  shouldNeverDespawn: 1
 --- !u!114 &7186553097851224609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -131,6 +136,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageToVelocityMultiplier: 5
   minVelocityForDamage: 2
+  shouldReleaseRBConstraintsOnImpact: 0
   interactableLayerIndex: 6
 --- !u!114 &8417544580794849210
 MonoBehaviour:
@@ -145,10 +151,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   properties:
-    moneyValue: 0
-    mischiefMeterPointsOnDestruction: 15
+    moneyValue: 80
+    mischiefMeterPointsOnDestruction: 14
     damageToScoreMultiplier: 2
-    bonusOnDestruction: 100
+    bonusOnDestruction: 150
 --- !u!1001 &755681687269774244
 PrefabInstance:
   m_ObjectHideFlags: 0
