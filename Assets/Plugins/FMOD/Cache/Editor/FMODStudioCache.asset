@@ -1409,6 +1409,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-8500653901024528897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/gameplay/mischief
+  m_EditorClassIdentifier: 
+  Name: mischief
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 1
+  Exists: 1
 --- !u!114 &-8476277283643922501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1715,7 +1737,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: -2729290292165987902}
+  - {fileID: -8500653901024528897}
   MinDistance: 0
   MaxDistance: 0
   Length: 120000
@@ -2511,6 +2533,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 1
   Exists: 0
+--- !u!114 &-7946260102098116790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/gameover/Parameter 1
+  m_EditorClassIdentifier: 
+  Name: Parameter 1
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 0
 --- !u!114 &-7943209989381443543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2578,6 +2622,28 @@ MonoBehaviour:
   IsGlobal: 0
   Exists: 0
 --- !u!114 &-7929014200877637717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/gameplay/mischief
+  m_EditorClassIdentifier: 
+  Name: mischief
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 1
+  Exists: 0
+--- !u!114 &-7925212603936468730
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2730,6 +2796,28 @@ MonoBehaviour:
     data2: 0
   Type: 0
   IsGlobal: 0
+  Exists: 0
+--- !u!114 &-7838505836450346200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/gameplay/mischief
+  m_EditorClassIdentifier: 
+  Name: mischief
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 1
   Exists: 0
 --- !u!114 &-7835253683013830695
 MonoBehaviour:
@@ -2996,6 +3084,28 @@ MonoBehaviour:
   IsGlobal: 0
   Exists: 1
 --- !u!114 &-7668497664857302004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/gameover/Parameter 1
+  m_EditorClassIdentifier: 
+  Name: Parameter 1
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 0
+--- !u!114 &-7664279624723187458
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4244,6 +4354,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 1
   Exists: 0
+--- !u!114 &-6898104204592240859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/gameover/Parameter 1
+  m_EditorClassIdentifier: 
+  Name: Parameter 1
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &-6872460797162499671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4596,6 +4728,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 1
   Exists: 0
+--- !u!114 &-6613377990215942776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/gameover/Parameter 1
+  m_EditorClassIdentifier: 
+  Name: Parameter 1
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 0
 --- !u!114 &-6602025217621938787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4639,6 +4793,28 @@ MonoBehaviour:
     data2: 0
   Type: 0
   IsGlobal: 1
+  Exists: 0
+--- !u!114 &-6590805037041032645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/gameover/Parameter 1
+  m_EditorClassIdentifier: 
+  Name: Parameter 1
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
   Exists: 0
 --- !u!114 &-6580985145361799910
 MonoBehaviour:
@@ -5299,7 +5475,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -879213366634398340}
+  - {fileID: -6898104204592240859}
   MinDistance: 0
   MaxDistance: 0
   Length: 31384
@@ -6621,6 +6797,28 @@ MonoBehaviour:
   IsGlobal: 0
   Exists: 0
 --- !u!114 &-5522778982715081161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/gameplay/mischief
+  m_EditorClassIdentifier: 
+  Name: mischief
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 1
+  Exists: 0
+--- !u!114 &-5522184116673655419
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8380,6 +8578,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 1
   Exists: 0
+--- !u!114 &-4544797246556623011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/gameplay/mischief
+  m_EditorClassIdentifier: 
+  Name: mischief
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 1
+  Exists: 0
 --- !u!114 &-4529692952405885376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9612,6 +9832,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-3608252047150759596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/gameplay/mischief
+  m_EditorClassIdentifier: 
+  Name: mischief
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 1
+  Exists: 0
 --- !u!114 &-3594950267122066110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10578,6 +10820,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 1
   Exists: 1
+--- !u!114 &-3145650843535327026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/gameover/Parameter 1
+  m_EditorClassIdentifier: 
+  Name: Parameter 1
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 0
 --- !u!114 &-3142924989368541567
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11105,7 +11369,7 @@ MonoBehaviour:
     data2: 0
   Type: 0
   IsGlobal: 1
-  Exists: 1
+  Exists: 0
 --- !u!114 &-2718851781877138965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11260,6 +11524,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 1
   Exists: 0
+--- !u!114 &-2584256678215096816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/gameplay/mischief
+  m_EditorClassIdentifier: 
+  Name: mischief
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 1
+  Exists: 1
 --- !u!114 &-2568189414490013712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11480,6 +11766,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-2429864011322678111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/gameplay/mischief
+  m_EditorClassIdentifier: 
+  Name: mischief
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 1
+  Exists: 0
 --- !u!114 &-2404413653569907760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11592,6 +11900,28 @@ MonoBehaviour:
   IsGlobal: 0
   Exists: 0
 --- !u!114 &-2325008882103780250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/gameplay/mischief
+  m_EditorClassIdentifier: 
+  Name: mischief
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 1
+  Exists: 0
+--- !u!114 &-2317727981522726940
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12471,6 +12801,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 1
   Exists: 0
+--- !u!114 &-1712708429377766290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/gameover/Parameter 1
+  m_EditorClassIdentifier: 
+  Name: Parameter 1
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &-1710328830191782967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12646,6 +12998,28 @@ MonoBehaviour:
     data2: 0
   Type: 0
   IsGlobal: 1
+  Exists: 0
+--- !u!114 &-1558966173461571644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/gameover/Parameter 1
+  m_EditorClassIdentifier: 
+  Name: Parameter 1
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
   Exists: 0
 --- !u!114 &-1549855038262773654
 MonoBehaviour:
@@ -13131,6 +13505,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-1224740922460904892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/gameover/Parameter 1
+  m_EditorClassIdentifier: 
+  Name: Parameter 1
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 0
 --- !u!114 &-1209893482945265948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13483,6 +13879,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-941679342104389009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/gameover/Parameter 1
+  m_EditorClassIdentifier: 
+  Name: Parameter 1
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 0
 --- !u!114 &-929480949032697159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13614,7 +14032,7 @@ MonoBehaviour:
     data2: 0
   Type: 0
   IsGlobal: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-878743894631909257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16080,6 +16498,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 1
   Exists: 0
+--- !u!114 &581956912989089010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/gameplay/mischief
+  m_EditorClassIdentifier: 
+  Name: mischief
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 1
+  Exists: 0
 --- !u!114 &602613848857524778
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16189,6 +16629,28 @@ MonoBehaviour:
     data2: 0
   Type: 0
   IsGlobal: 0
+  Exists: 0
+--- !u!114 &636243212774828040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/gameplay/mischief
+  m_EditorClassIdentifier: 
+  Name: mischief
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 1
   Exists: 0
 --- !u!114 &667322617859837661
 MonoBehaviour:
@@ -18281,6 +18743,28 @@ MonoBehaviour:
     data2: 0
   Type: 0
   IsGlobal: 0
+  Exists: 0
+--- !u!114 &1955365802240668630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/gameplay/mischief
+  m_EditorClassIdentifier: 
+  Name: mischief
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 1
   Exists: 0
 --- !u!114 &1998710279326829486
 MonoBehaviour:
@@ -20813,6 +21297,28 @@ MonoBehaviour:
     data2: 0
   Type: 0
   IsGlobal: 1
+  Exists: 0
+--- !u!114 &3741814002681689114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/gameover/Parameter 1
+  m_EditorClassIdentifier: 
+  Name: Parameter 1
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
   Exists: 0
 --- !u!114 &3752660685479127833
 MonoBehaviour:
@@ -26143,6 +26649,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 1
   Exists: 0
+--- !u!114 &6943466873602932077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/gameplay/mischief
+  m_EditorClassIdentifier: 
+  Name: mischief
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 1
+  Exists: 0
 --- !u!114 &6947145095995128659
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27904,6 +28432,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &8221659231304553786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/gameover/Parameter 1
+  m_EditorClassIdentifier: 
+  Name: Parameter 1
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 0
 --- !u!114 &8237611684719256992
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29593,6 +30143,28 @@ MonoBehaviour:
   m_Name: parameter:/gameplay/mischief
   m_EditorClassIdentifier: 
   Name: mischief
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 0
+--- !u!114 &9184749185244494210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/gameover/Parameter 1
+  m_EditorClassIdentifier: 
+  Name: Parameter 1
   Min: 0
   Max: 1
   Default: 0
