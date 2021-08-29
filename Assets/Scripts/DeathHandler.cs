@@ -23,6 +23,8 @@ namespace NicLib.Health
 
         ScoreCalculator scoreCalculator;
 
+        [SerializeField] Light[] lightsToOff;
+
 
         public void Kill()
         {
@@ -54,6 +56,8 @@ namespace NicLib.Health
                 scoreCalculator.AddDestructionBonus();
                 scoreCalculator.AddToScore_moneyValue();
             }
+
+            TurnOffLights();
         }
         
         public void SpawnDeathFX()
@@ -81,6 +85,15 @@ namespace NicLib.Health
             }
             
 
+        }
+
+        private void TurnOffLights()
+        {
+            foreach(Light light in lightsToOff)
+            {
+                if (light != null)
+                    light.color = Color.black;
+            }
         }
 
         private void PlayDeathSound()
