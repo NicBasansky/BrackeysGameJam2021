@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/StartScreen.unity
-    guid: 479c4d3f5ed6a5f43a3a48b41992431d
+    path: Assets/Scenes/StartNeighbourhoodMap.unity
+    guid: 005e6838fea7ea8469d19bb3e5877af9
   - enabled: 1
     path: Assets/Scenes/HouseMap.unity
     guid: c34d4e03060ee9646a3bc8947dd65e76

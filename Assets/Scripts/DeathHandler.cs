@@ -68,10 +68,10 @@ namespace NicLib.Health
                 return;
             }
             GameObject fx = Instantiate(deathFxPrefab, transform.position, Quaternion.identity);
-            if (fxSpawnParent)
-            {
-                fx.transform.parent = fxSpawnParent;
-            }
+            // if (fxSpawnParent)
+            // {
+            //     fx.transform.parent = fxSpawnParent;
+            // }
             fx.transform.parent = transform;
             
             
