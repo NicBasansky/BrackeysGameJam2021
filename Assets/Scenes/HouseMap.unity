@@ -2673,7 +2673,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3705039102200264922, guid: 737378bc1e74d3e428f49a18168b525a, type: 3}
       propertyPath: mischiefRecoveryIntervalSeconds
-      value: 0.2
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4525700157269181194, guid: 737378bc1e74d3e428f49a18168b525a, type: 3}
       propertyPath: m_InitialState
@@ -32315,7 +32315,7 @@ MonoBehaviour:
   fireFx: {fileID: 1151502900046148, guid: d5e400a2a0d155d4db9970614680534f, type: 3}
   scoreBonus: 1300
   igniteDelay: 3
-  mischieveContribution: 35
+  mischieveContribution: 27
   isOnFire: 0
 --- !u!135 &1939956798028698949
 SphereCollider:

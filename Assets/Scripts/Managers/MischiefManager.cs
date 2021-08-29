@@ -8,6 +8,8 @@ public class MischiefManager : MMSingleton<MischiefManager>
 {
     [FMODUnity.ParamRef]
     string mischief;
+
+    private FMOD.Studio.EventInstance musicEvent;
         
     [SerializeField] float mischiefAmount = 0f;
     [Min(1f)]
@@ -15,12 +17,18 @@ public class MischiefManager : MMSingleton<MischiefManager>
     [SerializeField] float mischiefRecoveryIntervalSeconds = 0.4f;
     [SerializeField] float recoveryAmountPerInterval = 1f;
     [SerializeField] HUD hUD;
+    private bool maxReached = false;
 
 
     void Start()
     {
         mischiefAmount = 0;
         StartCoroutine(ReduceMischiefMeter());
+
+        
+        musicEvent = FMODUnity.RuntimeManager.CreateInstance("event:/music/gameplay");
+        musicEvent.start();
+        
     }
     
     public void AddPointsToMischief(int mischiefPoints)
@@ -32,10 +40,19 @@ public class MischiefManager : MMSingleton<MischiefManager>
      
             Debug.Log("Maximum Mischief Reached!");
             GameOverManager.Instance.GameOver(false);
+            maxReached = true;
+
+            musicEvent.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+            musicEvent.release();
         }
         
         hUD.UpdateMischiefMeterUI();
         CheckMischiefPercentForAdaptiveMusic();
+    }
+
+    public bool GetIsMaxReached()
+    {
+        return maxReached;
     }
 
 

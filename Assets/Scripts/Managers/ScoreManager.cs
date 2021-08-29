@@ -66,7 +66,12 @@ public class ScoreManager : MMSingleton<ScoreManager>
     
     public void CalculateFinalScoreWithMischiefBonus()
     {
-        int scoreFromMischief = (100 - Mathf.FloorToInt(MischiefManager.Instance.GetMischiefPercent())) * pointsPerPercentNotMischief;
+        int scoreFromMischief = 0;
+        if (!MischiefManager.Instance.GetIsMaxReached())
+        {
+            scoreFromMischief = (100 - Mathf.FloorToInt(MischiefManager.Instance.GetMischiefPercent())) * pointsPerPercentNotMischief;
+
+        }
         print("scoreFromMischief: " + scoreFromMischief + " score: " + score);
         score = score + scoreFromMischief;
         finalMishiefScore = scoreFromMischief;
