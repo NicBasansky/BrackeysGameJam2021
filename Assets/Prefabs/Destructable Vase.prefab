@@ -93,6 +93,10 @@ PrefabInstance:
       value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 1687411448824375852, guid: 2eae573e2fd9d7b4db9390a81df14653, type: 3}
+      propertyPath: properties.bonusOnDestruction
+      value: 600
+      objectReference: {fileID: 0}
+    - target: {fileID: 1687411448824375852, guid: 2eae573e2fd9d7b4db9390a81df14653, type: 3}
       propertyPath: properties.damageToScoreMultiplier
       value: 4
       objectReference: {fileID: 0}

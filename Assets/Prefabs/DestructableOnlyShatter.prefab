@@ -115,6 +115,18 @@ PrefabInstance:
       propertyPath: maxHealth
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 1687411448824375852, guid: 2eae573e2fd9d7b4db9390a81df14653, type: 3}
+      propertyPath: properties.moneyValue
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1687411448824375852, guid: 2eae573e2fd9d7b4db9390a81df14653, type: 3}
+      propertyPath: properties.bonusOnDestruction
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1687411448824375852, guid: 2eae573e2fd9d7b4db9390a81df14653, type: 3}
+      propertyPath: properties.mischiefMeterPointsOnDestruction
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 3928168386948799828, guid: 2eae573e2fd9d7b4db9390a81df14653, type: 3}
       propertyPath: m_Name
       value: DestructableOnlyShatter
@@ -198,7 +210,7 @@ PrefabInstance:
     - target: {fileID: 6125084732755241250, guid: 2eae573e2fd9d7b4db9390a81df14653, type: 3}
       propertyPath: deathFxPrefab
       value: 
-      objectReference: {fileID: 1721238331839892331, guid: 678964c46c2b4594681a75aa1faaad71, type: 3}
+      objectReference: {fileID: 100010, guid: d8713a58d755d1a4cadbd1ad74492dd4, type: 3}
     - target: {fileID: 6125084732755241250, guid: 2eae573e2fd9d7b4db9390a81df14653, type: 3}
       propertyPath: shatterObject
       value: 
@@ -208,9 +220,25 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6125084732755241250, guid: 2eae573e2fd9d7b4db9390a81df14653, type: 3}
+      propertyPath: deathSound.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 7e9628c145be83047ad3fd6578c6de05, type: 3}
+    - target: {fileID: 6125084732755241250, guid: 2eae573e2fd9d7b4db9390a81df14653, type: 3}
+      propertyPath: eventPathDestructionSound
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6125084732755241250, guid: 2eae573e2fd9d7b4db9390a81df14653, type: 3}
+      propertyPath: extraDeathFxPrefabs.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6125084732755241250, guid: 2eae573e2fd9d7b4db9390a81df14653, type: 3}
       propertyPath: meshesToOffOnDeath.Array.data[0]
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 6125084732755241250, guid: 2eae573e2fd9d7b4db9390a81df14653, type: 3}
+      propertyPath: extraDeathFxPrefabs.Array.data[0]
+      value: 
+      objectReference: {fileID: 8966010998056766054, guid: 093afb1df4e03ee4eb2391a2521993be, type: 3}
     - target: {fileID: 8991501070483546093, guid: 2eae573e2fd9d7b4db9390a81df14653, type: 3}
       propertyPath: m_IsActive
       value: 0

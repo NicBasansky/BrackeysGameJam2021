@@ -1,1 +1,0 @@
-Core Prefab should be in every scene. If you make permanent changes be sure to apply your overrides (changes) the core prefab as well :)

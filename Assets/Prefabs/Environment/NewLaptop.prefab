@@ -80,7 +80,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d181959c6e6794f48873fb64d7993fc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventPathDestructionSound: 
+  eventPathDestructionSound: /sfx/destroy/tv
   deathSound:
   - {fileID: 0}
   shatterObject: {fileID: 0}
@@ -123,8 +123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageToVelocityMultiplier: 5
-  minVelocityForDamage: 2
-  interactableLayerIndex: 6
+  shouldReleaseRBConstraintsOnImpact: 0
 --- !u!114 &7569522415480065461
 MonoBehaviour:
   m_ObjectHideFlags: 0

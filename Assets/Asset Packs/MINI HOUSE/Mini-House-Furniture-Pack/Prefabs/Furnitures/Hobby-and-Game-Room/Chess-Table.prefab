@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4723397264078541227}
   - component: {fileID: -3303525127763085045}
   - component: {fileID: 1559573203318583705}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chess-Table
   m_TagString: Untagged
   m_Icon: {fileID: 0}

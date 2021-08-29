@@ -15,8 +15,8 @@ public class VelocityDamageDealer : MonoBehaviour
     float boomNoiseVelocityThreshold = 8f;
 
     Rigidbody rb;
-    [SerializeField] int interactableLayerIndex = 6;
-    [SerializeField] int groundLayerIndex = 7;
+    int interactableLayerIndex = 6;
+    int groundLayerIndex = 7;
 
     void Start()
     {

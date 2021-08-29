@@ -92,7 +92,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d181959c6e6794f48873fb64d7993fc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventPathDestructionSound: 
+  eventPathDestructionSound: /sfx/destroy/crash
   deathSound:
   - {fileID: 0}
   shatterObject: {fileID: 0}
@@ -102,8 +102,8 @@ MonoBehaviour:
   meshesToOffOnDeath:
   - {fileID: 0}
   parentGOToOffChildrenOnDeath: {fileID: 0}
-  shouldAutoDestroy: 1
-  shouldNeverDespawn: 0
+  shouldAutoDestroy: 0
+  shouldNeverDespawn: 1
 --- !u!114 &5829087292968661087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -117,9 +117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageToVelocityMultiplier: 5
-  minVelocityForDamage: 2
   shouldReleaseRBConstraintsOnImpact: 1
-  interactableLayerIndex: 6
 --- !u!114 &3062641396342240230
 MonoBehaviour:
   m_ObjectHideFlags: 0

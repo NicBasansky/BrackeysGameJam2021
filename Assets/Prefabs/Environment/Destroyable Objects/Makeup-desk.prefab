@@ -65,7 +65,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00be4bcf2fc6ded439dd950b3e849714, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 50
   health: 0
 --- !u!114 &1576950037740449757
 MonoBehaviour:
@@ -79,11 +79,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d181959c6e6794f48873fb64d7993fc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventPathDestructionSound: 
+  eventPathDestructionSound: /sfx/destroy/crash
   deathSound:
   - {fileID: 0}
   shatterObject: {fileID: 0}
-  deathFxPrefab: {fileID: 100010, guid: d8713a58d755d1a4cadbd1ad74492dd4, type: 3}
+  deathFxPrefab: {fileID: 1721238331839892331, guid: 678964c46c2b4594681a75aa1faaad71, type: 3}
   extraDeathFxPrefabs: []
   fxSpawnParent: {fileID: 0}
   meshesToOffOnDeath:
@@ -104,8 +104,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageToVelocityMultiplier: 5
-  minVelocityForDamage: 2
-  interactableLayerIndex: 6
+  shouldReleaseRBConstraintsOnImpact: 0
 --- !u!114 &6307357717822385363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -119,8 +118,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   properties:
-    moneyValue: 0
-    mischiefMeterPointsOnDestruction: 15
+    moneyValue: 150
+    mischiefMeterPointsOnDestruction: 8
     damageToScoreMultiplier: 2
     bonusOnDestruction: 100
 --- !u!64 &2477642612355860301

@@ -93,18 +93,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d181959c6e6794f48873fb64d7993fc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventPathDestructionSound: sfx/destroy/tv
+  eventPathDestructionSound: 
   deathSound:
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 9ba96bdcdbb13304592a9c6a34e52629, type: 3}
+  - {fileID: 8300000, guid: 0d44aa370f43bdc4795be1ec6832e052, type: 3}
   shatterObject: {fileID: 0}
   deathFxPrefab: {fileID: 1721238331839892331, guid: 678964c46c2b4594681a75aa1faaad71, type: 3}
-  extraDeathFxPrefabs: []
+  extraDeathFxPrefabs:
+  - {fileID: 6393923019766723059, guid: 7e58b78251970f446935d11e598a743a, type: 3}
+  - {fileID: 691968379759644604, guid: f6e2507ef9badfe4b9ce4604a039b578, type: 3}
   fxSpawnParent: {fileID: 0}
   meshesToOffOnDeath:
   - {fileID: 0}
   parentGOToOffChildrenOnDeath: {fileID: 0}
   shouldAutoDestroy: 1
-  shouldNeverDespawn: 0
+  shouldNeverDespawn: 1
 --- !u!114 &8333964723770820996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -134,9 +137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageToVelocityMultiplier: 5
-  minVelocityForDamage: 2
   shouldReleaseRBConstraintsOnImpact: 0
-  interactableLayerIndex: 6
 --- !u!114 &7260597576382176287
 MonoBehaviour:
   m_ObjectHideFlags: 0

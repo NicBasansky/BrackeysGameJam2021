@@ -16,9 +16,11 @@ GameObject:
   - component: {fileID: 4421797669514215616}
   - component: {fileID: 5787730620170344162}
   - component: {fileID: 3042043320531866971}
+  - component: {fileID: 3113970016287649090}
+  - component: {fileID: 8534551637076926114}
   m_Layer: 6
   m_Name: Seat Pillow
-  m_TagString: Untagged
+  m_TagString: Fire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -135,8 +137,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageToVelocityMultiplier: 5
   shouldReleaseRBConstraintsOnImpact: 0
-  interactableLayerIndex: 6
-  groundLayerIndex: 7
 --- !u!114 &3042043320531866971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -154,6 +154,34 @@ MonoBehaviour:
     mischiefMeterPointsOnDestruction: 2
     damageToScoreMultiplier: 2
     bonusOnDestruction: 100
+--- !u!114 &3113970016287649090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 855342908809470499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9700056d5d1737c4a9150d62632a5ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireFx: {fileID: 3504155544086809868, guid: 5b9ca73418fc28e4db16cccb903633fa, type: 3}
+  scoreBonus: 1300
+  isOnFire: 0
+--- !u!135 &8534551637076926114
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 855342908809470499}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.4
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &3136950921348446436
 PrefabInstance:
   m_ObjectHideFlags: 0
