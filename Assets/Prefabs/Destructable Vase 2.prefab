@@ -15,6 +15,7 @@ MonoBehaviour:
   explosionForce: 8
   explosionRadius: 3
   objectsToDetatchAddRB: []
+  colliderToOff: {fileID: 7573323644561668383}
 --- !u!1001 &6888943852018377797
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -151,6 +152,11 @@ PrefabInstance:
 --- !u!4 &7573323644561668382 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3928168386948799835, guid: 2eae573e2fd9d7b4db9390a81df14653, type: 3}
+  m_PrefabInstance: {fileID: 6888943852018377797}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &7573323644561668383 stripped
+BoxCollider:
+  m_CorrespondingSourceObject: {fileID: 3928168386948799834, guid: 2eae573e2fd9d7b4db9390a81df14653, type: 3}
   m_PrefabInstance: {fileID: 6888943852018377797}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8657999461503928100

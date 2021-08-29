@@ -9,6 +9,7 @@ public class ShatterObject : MonoBehaviour
     [SerializeField] float explosionRadius = 3f;
     [Tooltip("This is useful for things like a base for the sculpture to sit on")]
     [SerializeField] GameObject[] objectsToDetatchAddRB;
+    [SerializeField] Collider colliderToOff;
 
 
     private bool shatter = false;
@@ -42,7 +43,11 @@ public class ShatterObject : MonoBehaviour
     public void Shatter()
     {
         // remove collider on base gameObject
-        transform.root.gameObject.GetComponent<Collider>().enabled = false;
+        if (colliderToOff)
+        {
+            colliderToOff.enabled = false;
+
+        }
 
         UnparentObjectsAndAddRB();
         shatter = true;

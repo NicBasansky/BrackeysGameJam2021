@@ -199,7 +199,7 @@ MonoBehaviour:
   - {fileID: 0}
   parentGOToOffChildrenOnDeath: {fileID: 0}
   shouldAutoDestroy: 1
-  shouldNeverDespawn: 0
+  shouldNeverDespawn: 1
   lightsToOff: []
 --- !u!114 &7420033995247496943
 MonoBehaviour:
