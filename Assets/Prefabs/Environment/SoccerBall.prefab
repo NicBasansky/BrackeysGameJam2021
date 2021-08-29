@@ -147,7 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00be4bcf2fc6ded439dd950b3e849714, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 30
   health: 0
 --- !u!114 &3127212629393280699
 MonoBehaviour:
@@ -201,9 +201,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42c6a9ebf257511439ece24f2546780d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageToVelocityMultiplier: 5
-  minVelocityForDamage: 2
-  interactableLayerIndex: 6
+  damageToVelocityMultiplier: 9
+  shouldReleaseRBConstraintsOnImpact: 0
 --- !u!114 &7569522415480065461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -217,8 +216,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   properties:
-    moneyValue: 0
-    mischiefMeterPointsOnDestruction: 15
+    moneyValue: 25
+    mischiefMeterPointsOnDestruction: 8
     damageToScoreMultiplier: 2
     bonusOnDestruction: 100
 --- !u!135 &2230544575947494067

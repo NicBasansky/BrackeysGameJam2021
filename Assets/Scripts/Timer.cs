@@ -8,6 +8,7 @@ public class Timer : MonoBehaviour
     private FMOD.Studio.EventInstance musicEvent;
 
     public float timerSeconds = 90f;
+    private bool stopTiming = false;
     [SerializeField] HUD hUD;
 
     void Start()
@@ -19,7 +20,8 @@ public class Timer : MonoBehaviour
 
     void Update()
     {
-     
+        if (stopTiming) return;
+        
         if (timerSeconds > 0)
         {
             timerSeconds -= Time.deltaTime;
@@ -33,7 +35,8 @@ public class Timer : MonoBehaviour
             musicEvent.stop (FMOD.Studio.STOP_MODE.IMMEDIATE);
             musicEvent.release ();
 
-            hUD.ShowEndScreen(true);
+            stopTiming = true;
+            GameOverManager.Instance.GameOver(true);
         }
         DisplayTimer(timerSeconds);
     }

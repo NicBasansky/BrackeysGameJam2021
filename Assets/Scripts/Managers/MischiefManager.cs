@@ -19,6 +19,7 @@ public class MischiefManager : MMSingleton<MischiefManager>
 
     void Start()
     {
+        mischiefAmount = 0;
         StartCoroutine(ReduceMischiefMeter());
     }
     
@@ -28,16 +29,16 @@ public class MischiefManager : MMSingleton<MischiefManager>
         if (mischiefAmount >= maxMischiefAmount)
         {
             mischiefAmount = Mathf.Min(maxMischiefAmount, mischiefAmount);
-            // TODO call event that Max Mischief if reached
+     
             Debug.Log("Maximum Mischief Reached!");
-            GameOverManager.Instance.GameOver();
+            GameOverManager.Instance.GameOver(false);
         }
         
         hUD.UpdateMischiefMeterUI();
         CheckMischiefPercentForAdaptiveMusic();
     }
 
-    // TODO GUS SOUNDS
+
     private void CheckMischiefPercentForAdaptiveMusic()
     {
          float percent = GetMischiefPercent();

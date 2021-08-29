@@ -36,7 +36,7 @@ public class VelocityDamageDealer : MonoBehaviour
                 // TODO find out what the min velocity should be in order to start dealing any damage
                 float damage = rb.velocity.magnitude * damageToVelocityMultiplier;
                 health.AffectHealth(-damage);
-                FMODUnity.RuntimeManager.PlayOneShot("event:/sfx/destroy/explosives");
+                FMODUnity.RuntimeManager.PlayOneShot("event:/sfx/destroy/crash");
                 if (shouldReleaseRBConstraintsOnImpact)
                 {
                     rb.constraints = RigidbodyConstraints.None;

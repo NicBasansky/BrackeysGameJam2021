@@ -450,13 +450,15 @@ MonoBehaviour:
   maxThrowingForce: 15
   throwingPercent: 0.747
   maxChargingSeconds: 3.5
-  windUpPos: {x: 0, y: 0.35, z: 1.5}
   pickupParent: {fileID: 4912236659456449341}
   currentlyPickedUpObject: {fileID: 0}
   minSpeed: 0
   maxSpeed: 6000
   maxDistance: 10
   rotationSpeed: 100
+  minVelocityForBabyBoomSound: 9
+  percentChanceToPlayThrowSound: 40
+  percentChanceForBabyBoomSound: 40
 --- !u!114 &6440595255768914950
 MonoBehaviour:
   m_ObjectHideFlags: 0

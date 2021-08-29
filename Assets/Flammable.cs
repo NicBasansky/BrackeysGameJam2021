@@ -35,7 +35,7 @@ public class Flammable : MonoBehaviour
         
         if (other.gameObject.tag == "Fire")
         {
-            print(gameObject.name + "is being set on fire by " + other.gameObject.name);
+            
             Flammable otherFlammable = other.GetComponentInChildren<Flammable>();
             if (otherFlammable == null) return;
 
@@ -68,6 +68,8 @@ public class Flammable : MonoBehaviour
         fx.transform.parent = transform;
 
         isOnFire = true;
+
+        FMODUnity.RuntimeManager.PlayOneShot("event:/sfx/baby/laugh");
 
         AddToScore();
         

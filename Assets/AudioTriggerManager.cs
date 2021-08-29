@@ -9,29 +9,6 @@ public class AudioTriggerManager : MMSingleton<AudioTriggerManager>
     bool isSpeaking = false;
     float isSpeakingResetSeconds = 2.0f;
 
-    void Start()
-    {
-        // Bus musicBus = FMODUnity.RuntimeManager.GetBus("bus:/music/gameplay");
-        // musicBus.setMute(true);
-        //StartCoroutine(PlaySound());
-    }
-
-    // IEnumerator PlaySound()
-    // {
-
-    //     {
-    //         yield return new WaitForSeconds(2f);
-    //         PlayDamageSound();
-    //         yield return new WaitForSeconds(2f);
-    //         PlayDamageSound();
-    //         yield return new WaitForSeconds(2f);
-    //         PlayDamageSound();
-    //         yield return new WaitForSeconds(2f);
-    //         PlayDamageSound();
-    //         yield return new WaitForSeconds(2f);
-    //         PlayDamageSound();
-    //     }
-    // }
 
     public void PlayBabyThrowSound(bool highVelocity)
     {
@@ -40,7 +17,7 @@ public class AudioTriggerManager : MMSingleton<AudioTriggerManager>
             if (highVelocity && Random.Range(0, 100) < 60)
             {
                 FMODUnity.RuntimeManager.PlayOneShot("event:/sfx/baby/boom");
-                print("boom");
+           
             }
             else if (!highVelocity && Random.Range(0, 100) < 30)
             {
@@ -49,7 +26,7 @@ public class AudioTriggerManager : MMSingleton<AudioTriggerManager>
             else
             {
                 FMODUnity.RuntimeManager.PlayOneShot("event:/sfx/baby/laugh");
-                print("laugh");
+      
             }
             StartCoroutine(ResetIsSpeaking());
         }

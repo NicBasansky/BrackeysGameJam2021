@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 4984245188303547244}
   - component: {fileID: 6948493621659422477}
   - component: {fileID: 2785648848893353745}
-  - component: {fileID: 8333964723770820996}
   - component: {fileID: 2208865099090960294}
   - component: {fileID: 7260597576382176287}
   m_Layer: 6
@@ -108,22 +107,6 @@ MonoBehaviour:
   parentGOToOffChildrenOnDeath: {fileID: 0}
   shouldAutoDestroy: 1
   shouldNeverDespawn: 1
---- !u!114 &8333964723770820996
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4984245188303547239}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68d6779a7d9a75241b945076e28ed7ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectHolder: {fileID: 0}
-  pickedUp: 0
-  breakForce: 35
-  waitOnPickup: 0.2
 --- !u!114 &2208865099090960294
 MonoBehaviour:
   m_ObjectHideFlags: 0

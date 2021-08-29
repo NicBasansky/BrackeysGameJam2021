@@ -13,6 +13,8 @@ public class ScoreManager : MMSingleton<ScoreManager>
     [SerializeField] int pointsPerPercentNotMischief = 3;
     [SerializeField] int scoreDeductionFromMaxingMischief = 50;
     [SerializeField] HUD hUD;
+    [SerializeField] EndScreen endScreen;
+    private int finalMishiefScore = 0;
 
     public int GetScore()
     {
@@ -39,6 +41,11 @@ public class ScoreManager : MMSingleton<ScoreManager>
         CalculateScore();
     }
 
+    public int GetTotalDestructionMoneyValue()
+    {
+        return Mathf.FloorToInt(totalDestructionMoneyValue);
+    }
+
     public int CalculateScore()
     {
         int scoreFromMoneyValue = (int)totalDestructionMoneyValue * pointsPerDollar;
@@ -51,14 +58,22 @@ public class ScoreManager : MMSingleton<ScoreManager>
         return score; // need to return?
     }
 
-    // needs to be called at the end of the game
-    private int CalculateFinalScoreWithMischiefBonus()
+    public int GetMischiefScoreBonus()
     {
-        int scoreFromMischief = (int)(100 - MischiefManager.Instance.GetMischiefPercent()) * pointsPerPercentNotMischief;
+        return finalMishiefScore;
+    }
+
+    
+    public void CalculateFinalScoreWithMischiefBonus()
+    {
+        int scoreFromMischief = (100 - Mathf.FloorToInt(MischiefManager.Instance.GetMischiefPercent())) * pointsPerPercentNotMischief;
+        print("scoreFromMischief: " + scoreFromMischief + " score: " + score);
         score = score + scoreFromMischief;
+        finalMishiefScore = scoreFromMischief;
 
-        hUD.UpdateScoreUI();
+        endScreen.UpdateScore();
+        //hUD.UpdateScoreUI();
 
-        return score;
+    
     }
 }

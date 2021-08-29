@@ -3,11 +3,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class EndScreen : MonoBehaviour
 {
     [SerializeField] GameObject winTextGo;
     [SerializeField] GameObject loseTextGo;
+    [SerializeField] TextMeshProUGUI moneyText;
+    [SerializeField] TextMeshProUGUI totalScoreText;
+    [SerializeField] TextMeshProUGUI lowMischiefScoreText;
+    
 
     void Start()
     {
@@ -37,5 +42,12 @@ public class EndScreen : MonoBehaviour
     {
         SceneManager.LoadSceneAsync(1, LoadSceneMode.Single);
 
+    }
+
+    public void UpdateScore()
+    {
+        moneyText.text = "$" + ScoreManager.Instance.GetTotalDestructionMoneyValue() + ".00";
+        totalScoreText.text = ScoreManager.Instance.GetScore().ToString();
+        lowMischiefScoreText.text = ScoreManager.Instance.GetMischiefScoreBonus().ToString();
     }
 }

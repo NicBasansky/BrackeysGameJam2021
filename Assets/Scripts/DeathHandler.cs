@@ -8,6 +8,7 @@ namespace NicLib.Health
     {
         [SerializeField] string eventPathDestructionSound; // need?
         [SerializeField] AudioClip[] deathSound;
+        
         [SerializeField] ShatterObject shatterObject;
 
         [SerializeField] GameObject deathFxPrefab;
@@ -67,16 +68,16 @@ namespace NicLib.Health
             {
                 fx.transform.parent = fxSpawnParent;
             }
-            //fx.transform.position = transform.position;
+            fx.transform.parent = transform;
             
             
             foreach(GameObject go in extraDeathFxPrefabs)
             {
                 GameObject extraFx = Instantiate(go, transform.position, Quaternion.identity);
                 //if (fxSpawnParent)
-                {
-                    extraFx.transform.parent = transform;//xSpawnParent;
-                }
+
+                extraFx.transform.SetParent(transform);//xSpawnParent;
+                
             }
             
 
@@ -88,12 +89,16 @@ namespace NicLib.Health
             {
                 FMODUnity.RuntimeManager.PlayOneShot("event:" + eventPathDestructionSound);
             }
-            else if (deathSound.Length != 0)
+            else if (deathSound.Length != 0 && deathSound[0] != null)
             {
                 int randomIndex = Random.Range(0, deathSound.Length - 1);
                 if (deathSound[randomIndex])
                     AudioSource.PlayClipAtPoint(deathSound[randomIndex], transform.position);
 
+            }
+            else
+            {
+                FMODUnity.RuntimeManager.PlayOneShot("event:/sfx/destroy/crash");
             }
         }
         
