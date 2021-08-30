@@ -1085,7 +1085,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 660cbb16c43e98941848b6ecde99c778, type: 2}
+  - {fileID: 2100000, guid: 9dc49cc8bfe50b647b8c24e3656ac252, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2640,6 +2640,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2821345334902707330, guid: 737378bc1e74d3e428f49a18168b525a, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2821345334902707330, guid: 737378bc1e74d3e428f49a18168b525a, type: 3}
       propertyPath: volumeLayer.m_Bits
       value: 256
       objectReference: {fileID: 0}
@@ -2803,6 +2807,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6531253298284105664, guid: 737378bc1e74d3e428f49a18168b525a, type: 3}
+      propertyPath: score
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6784983124836011177, guid: 737378bc1e74d3e428f49a18168b525a, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -2878,6 +2886,10 @@ PrefabInstance:
     - target: {fileID: 8717462068813587391, guid: 737378bc1e74d3e428f49a18168b525a, type: 3}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8717462068813587391, guid: 737378bc1e74d3e428f49a18168b525a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8815423203296580839, guid: 737378bc1e74d3e428f49a18168b525a, type: 3}
       propertyPath: m_Height
@@ -10077,10 +10089,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 946696492}
     m_Modifications:
-    - target: {fileID: 7745643615883063434, guid: 8a2fbedbea46eca49b2eaf794559396a, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 7e3fd25b5477f1244a13dd98d14eaecf, type: 2}
     - target: {fileID: 8106182068940362079, guid: 8a2fbedbea46eca49b2eaf794559396a, type: 3}
       propertyPath: m_Name
       value: Stairs (2)
@@ -13007,10 +13015,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pear-Seat (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 8591635607983038578, guid: a60f7ec7b221d4c4891c9382e8168776, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: b9bd44cf082ed31499ea3e34b9d330c3, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a60f7ec7b221d4c4891c9382e8168776, type: 3}
 --- !u!1001 &985613565
@@ -16498,10 +16502,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 946696492}
     m_Modifications:
-    - target: {fileID: 7745643615883063434, guid: 8a2fbedbea46eca49b2eaf794559396a, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 7e3fd25b5477f1244a13dd98d14eaecf, type: 2}
     - target: {fileID: 8106182068940362079, guid: 8a2fbedbea46eca49b2eaf794559396a, type: 3}
       propertyPath: m_Name
       value: Stairs (1)
@@ -21047,10 +21047,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 824366449}
     m_Modifications:
-    - target: {fileID: 5494545983333943829, guid: 19f10e9ca897cd84eaa3f1f908f38e00, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 6e61a58f3c62da44f957ce9ad2ffb746, type: 2}
     - target: {fileID: 7450038050076258619, guid: 19f10e9ca897cd84eaa3f1f908f38e00, type: 3}
       propertyPath: m_Name
       value: Seat-Pillow
@@ -24792,10 +24788,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pear-Seat (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 8591635607983038578, guid: a60f7ec7b221d4c4891c9382e8168776, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: b9bd44cf082ed31499ea3e34b9d330c3, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a60f7ec7b221d4c4891c9382e8168776, type: 3}
 --- !u!1 &1863540962 stripped
@@ -25500,10 +25492,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8348112079796218009}
     m_Modifications:
-    - target: {fileID: 459082606335628605, guid: be4352355ba0dd945b1e505baed8bcd4, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 3e3120f456cec4a44982d0abd4ce499e, type: 2}
     - target: {fileID: 3710501440642124840, guid: be4352355ba0dd945b1e505baed8bcd4, type: 3}
       propertyPath: m_RootOrder
       value: 23
@@ -32307,15 +32295,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1939956798028698945}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9700056d5d1737c4a9150d62632a5ce7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fireFx: {fileID: 1151502900046148, guid: d5e400a2a0d155d4db9970614680534f, type: 3}
-  scoreBonus: 1300
+  scoreBonus: 2000
   igniteDelay: 3
-  mischieveContribution: 27
+  mischieveContribution: 12
   isOnFire: 0
 --- !u!135 &1939956798028698949
 SphereCollider:
@@ -32451,6 +32439,10 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: -0.16
       objectReference: {fileID: 0}
+    - target: {fileID: 5178966612975182638, guid: 7cfa6b40dc4454e4d93f55adc4680c09, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9c92e9d04afe49c41b90675a3f2dceb3, type: 2}
     - target: {fileID: 7858748970410122926, guid: 7cfa6b40dc4454e4d93f55adc4680c09, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -34879,10 +34871,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 946696492}
     m_Modifications:
-    - target: {fileID: 7745643615883063434, guid: 8a2fbedbea46eca49b2eaf794559396a, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 7e3fd25b5477f1244a13dd98d14eaecf, type: 2}
     - target: {fileID: 8106182068940362079, guid: 8a2fbedbea46eca49b2eaf794559396a, type: 3}
       propertyPath: m_Name
       value: Stairs

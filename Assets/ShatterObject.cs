@@ -18,9 +18,15 @@ public class ShatterObject : MonoBehaviour
     private void FixedUpdate() 
     {
         if (!shatter) return;
-
+        MeshRenderer rend = GetComponent<MeshRenderer>();
+        if (rend)
+        {
+            rend.enabled = false;
+        }
+        
         foreach (Transform t in transform)
         {
+            t.gameObject.SetActive(true);
             MeshCollider coll = t.gameObject.AddComponent<MeshCollider>();
             coll.convex = true;
             //t.GetComponent<MeshCollider>().isTrigger = false;

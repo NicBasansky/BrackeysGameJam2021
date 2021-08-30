@@ -104,6 +104,7 @@ MonoBehaviour:
   parentGOToOffChildrenOnDeath: {fileID: 0}
   shouldAutoDestroy: 1
   shouldNeverDespawn: 0
+  lightsToOff: []
 --- !u!114 &7295539373947784951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -158,6 +159,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6034082695015820315}
     m_Modifications:
+    - target: {fileID: 498721282949996800, guid: cf788d8ce7bbef6428c4ccfeb24dbf0d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9c92e9d04afe49c41b90675a3f2dceb3, type: 2}
     - target: {fileID: 3844866056935331921, guid: cf788d8ce7bbef6428c4ccfeb24dbf0d, type: 3}
       propertyPath: m_Enabled
       value: 0
