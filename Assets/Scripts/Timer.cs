@@ -5,17 +5,17 @@ using UnityEngine;
 public class Timer : MonoBehaviour
 {
 
-    private FMOD.Studio.EventInstance musicEvent;
+    //private FMOD.Studio.EventInstance musicEvent;
 
     public float timerSeconds = 90f;
     private bool stopTiming = false;
     [SerializeField] HUD hUD;
 
-    void Start()
-    {
-        musicEvent = FMODUnity.RuntimeManager.CreateInstance("event:/music/gameplay");
-        musicEvent.start();
-    }
+    // void Start()
+    // {
+    //     musicEvent = FMODUnity.RuntimeManager.CreateInstance("event:/music/gameplay");
+    //     musicEvent.start();
+    // }
 
 
     void Update()
@@ -31,9 +31,11 @@ public class Timer : MonoBehaviour
         {
             timerSeconds = 0;
             Debug.Log("Timer has run out!");
-            
-            musicEvent.stop (FMOD.Studio.STOP_MODE.IMMEDIATE);
-            musicEvent.release ();
+
+            // musicEvent.stop (FMOD.Studio.STOP_MODE.IMMEDIATE);
+            // musicEvent.release ();
+
+            AudioTriggerManager.Instance.StopGameplayMusic();
 
             stopTiming = true;
             GameOverManager.Instance.GameOver(true);

@@ -9,6 +9,21 @@ public class AudioTriggerManager : MMSingleton<AudioTriggerManager>
     bool isSpeaking = false;
     float isSpeakingResetSeconds = 2.0f;
 
+    private FMOD.Studio.EventInstance musicEvent;
+
+    void Start()
+    {
+        
+        musicEvent = FMODUnity.RuntimeManager.CreateInstance("event:/music/gameplay");
+        musicEvent.start();
+
+    }
+
+    public void StopGameplayMusic()
+    {
+        musicEvent.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        musicEvent.release();
+    }
 
     public void PlayBabyThrowSound(bool highVelocity)
     {

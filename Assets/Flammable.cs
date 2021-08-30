@@ -81,6 +81,10 @@ public class Flammable : MonoBehaviour
         if (hasScoreBonus)
             ScoreManager.Instance.AddToScore(scoreBonus);
 
-        MischiefManager.Instance.AddPointsToMischief(mischieveContribution);
+        if(!isStartingOnFire)
+        {
+
+            MischiefManager.Instance.AddPointsToMischief(mischieveContribution);
+        }
     }
 }

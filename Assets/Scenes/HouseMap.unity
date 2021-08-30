@@ -2641,7 +2641,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2821345334902707330, guid: 737378bc1e74d3e428f49a18168b525a, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2821345334902707330, guid: 737378bc1e74d3e428f49a18168b525a, type: 3}
       propertyPath: volumeLayer.m_Bits
@@ -2669,6 +2669,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3698773934159800246, guid: 737378bc1e74d3e428f49a18168b525a, type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3705039102200264922, guid: 737378bc1e74d3e428f49a18168b525a, type: 3}
+      propertyPath: mischiefAmount
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3705039102200264922, guid: 737378bc1e74d3e428f49a18168b525a, type: 3}
@@ -2813,7 +2817,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6784983124836011177, guid: 737378bc1e74d3e428f49a18168b525a, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6844937859274541603, guid: 737378bc1e74d3e428f49a18168b525a, type: 3}
       propertyPath: m_AnchorMax.y
@@ -2876,8 +2880,12 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8159483509312415896, guid: 737378bc1e74d3e428f49a18168b525a, type: 3}
-      propertyPath: m_Enabled
+      propertyPath: PlayEvent
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8159483509312415896, guid: 737378bc1e74d3e428f49a18168b525a, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8409662468843029451, guid: 737378bc1e74d3e428f49a18168b525a, type: 3}
       propertyPath: m_Layer
@@ -2889,7 +2897,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8717462068813587391, guid: 737378bc1e74d3e428f49a18168b525a, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8815423203296580839, guid: 737378bc1e74d3e428f49a18168b525a, type: 3}
       propertyPath: m_Height
