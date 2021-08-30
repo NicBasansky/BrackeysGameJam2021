@@ -9,13 +9,21 @@ public class MischiefMeterUI : MonoBehaviour
 
     void Start()
     {
-        UpdateMischiefMeter();
+        fillRect.localScale = new Vector3(1, 0, 1);
     }
 
     public void UpdateMischiefMeter()
     {
         float percentOfMax = MischiefManager.Instance.GetMischiefPercent();
-        fillRect.localScale = new Vector3(1, percentOfMax, 1);
+        if (percentOfMax != 0)
+        {
+            fillRect.localScale = new Vector3(1, percentOfMax, 1);
+
+        }
+        else
+        {
+            fillRect.localScale = new Vector3(1, 0, 1);
+        }
         
     }
 }

@@ -65,6 +65,8 @@ public class MischiefManager : MMSingleton<MischiefManager>
 
     public float GetMischiefPercent()
     {
+        if (mischiefAmount <= 0)
+            return 0;
         return mischiefAmount / maxMischiefAmount;
     }
 

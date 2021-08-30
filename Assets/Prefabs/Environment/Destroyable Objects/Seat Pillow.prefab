@@ -170,7 +170,7 @@ MonoBehaviour:
   fireFx: {fileID: 3504155544086809868, guid: 5b9ca73418fc28e4db16cccb903633fa, type: 3}
   scoreBonus: 1300
   igniteDelay: 0
-  mischieveContribution: 10
+  mischieveContribution: 7
   isOnFire: 0
 --- !u!135 &8534551637076926114
 SphereCollider:
