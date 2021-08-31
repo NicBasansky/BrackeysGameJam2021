@@ -6,8 +6,10 @@ using NicLib.SceneManagement;
 [RequireComponent(typeof(Fader))]
 public class TriggerFader : MonoBehaviour
 {
-    private void Start() {
-        Invoke("Fade", 3);
+    [SerializeField] float fadeTriggerDelay = 2.2f;
+    private void Start() 
+    {
+        Invoke("Fade", fadeTriggerDelay);
     }
 
     private void Fade()

@@ -18,7 +18,7 @@ public class AudioTriggerManager : MMSingleton<AudioTriggerManager>
         musicEvent.start();
 
         // start music again in two minutes from now
-        StartCoroutine(RestartMusic());
+        //StartCoroutine(RestartMusic());
 
     }
 

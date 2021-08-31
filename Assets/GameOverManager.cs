@@ -23,8 +23,6 @@ public class GameOverManager : MMSingleton<GameOverManager>
         // calculate and set final score
         ScoreManager.Instance.CalculateFinalScoreWithMischiefBonus();
 
-      
-
         if (win)
         {
             FMODUnity.RuntimeManager.PlayOneShot("event:/sfx/baby/win");
