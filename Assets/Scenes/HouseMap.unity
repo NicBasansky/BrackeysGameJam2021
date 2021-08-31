@@ -2705,7 +2705,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3705039102200264922, guid: 737378bc1e74d3e428f49a18168b525a, type: 3}
       propertyPath: maxMischiefAmount
-      value: 100
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 3705039102200264922, guid: 737378bc1e74d3e428f49a18168b525a, type: 3}
       propertyPath: mischiefRecoveryIntervalSeconds
@@ -2901,7 +2901,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7687893033914829741, guid: 737378bc1e74d3e428f49a18168b525a, type: 3}
       propertyPath: timerSeconds
-      value: 120
+      value: 181
       objectReference: {fileID: 0}
     - target: {fileID: 7998792449631935162, guid: 737378bc1e74d3e428f49a18168b525a, type: 3}
       propertyPath: m_Direction
@@ -30748,8 +30748,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.169843, y: 1.2312016, z: 0.5592036}
-  m_Center: {x: -0.00000025508413, y: 0.6141722, z: 0.2796017}
+  m_Size: {x: 1.169843, y: 1.2312016, z: 1.05}
+  m_Center: {x: -0.00000025508413, y: 0.6141722, z: -0.02}
 --- !u!1 &289305253965056205
 GameObject:
   m_ObjectHideFlags: 0
@@ -32811,23 +32811,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 114422232390539699, guid: 7cfa6b40dc4454e4d93f55adc4680c09, type: 3}
   m_PrefabInstance: {fileID: 1980068743213042930}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1939956798028698948
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1939956798028698945}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9700056d5d1737c4a9150d62632a5ce7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fireFx: {fileID: 1151502900046148, guid: d5e400a2a0d155d4db9970614680534f, type: 3}
-  scoreBonus: 2000
-  igniteDelay: 3
-  mischieveContribution: 12
-  isOnFire: 0
 --- !u!135 &1939956798028698949
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -32896,7 +32879,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 114422232390539696, guid: 7cfa6b40dc4454e4d93f55adc4680c09, type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114422232390539699, guid: 7cfa6b40dc4454e4d93f55adc4680c09, type: 3}
       propertyPath: m_Name
@@ -32954,6 +32937,18 @@ PrefabInstance:
       propertyPath: fireFx
       value: 
       objectReference: {fileID: 1151502900046148, guid: d5e400a2a0d155d4db9970614680534f, type: 3}
+    - target: {fileID: 3610815410914806756, guid: 7cfa6b40dc4454e4d93f55adc4680c09, type: 3}
+      propertyPath: scoreBonus
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 3610815410914806756, guid: 7cfa6b40dc4454e4d93f55adc4680c09, type: 3}
+      propertyPath: igniteDelay
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3610815410914806756, guid: 7cfa6b40dc4454e4d93f55adc4680c09, type: 3}
+      propertyPath: mischieveContribution
+      value: 17
+      objectReference: {fileID: 0}
     - target: {fileID: 3610815410914806759, guid: 7cfa6b40dc4454e4d93f55adc4680c09, type: 3}
       propertyPath: m_Radius
       value: 0.4
@@ -33879,6 +33874,10 @@ PrefabInstance:
       propertyPath: fxSpawnParent
       value: 
       objectReference: {fileID: 710683427}
+    - target: {fileID: 3174512590205471943, guid: fe0b4cfa1ba4ddf488738b8c2b386a29, type: 3}
+      propertyPath: shouldNeverDespawn
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5732279856154556593, guid: fe0b4cfa1ba4ddf488738b8c2b386a29, type: 3}
       propertyPath: m_Name
       value: StandingMirror
