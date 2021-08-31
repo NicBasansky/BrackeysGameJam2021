@@ -17,6 +17,15 @@ public class AudioTriggerManager : MMSingleton<AudioTriggerManager>
         musicEvent = FMODUnity.RuntimeManager.CreateInstance("event:/music/gameplay");
         musicEvent.start();
 
+        // start music again in two minutes from now
+        StartCoroutine(RestartMusic());
+
+    }
+
+    IEnumerator RestartMusic()
+    {
+        yield return new WaitForSeconds(119f);
+        musicEvent.start();
     }
 
     public void StopGameplayMusic()
