@@ -147,7 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00be4bcf2fc6ded439dd950b3e849714, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 30
+  maxHealth: 90
   health: 0
 --- !u!114 &3127212629393280699
 MonoBehaviour:
@@ -173,6 +173,7 @@ MonoBehaviour:
   parentGOToOffChildrenOnDeath: {fileID: 0}
   shouldAutoDestroy: 1
   shouldNeverDespawn: 0
+  lightsToOff: []
 --- !u!114 &9108173239844509742
 MonoBehaviour:
   m_ObjectHideFlags: 0

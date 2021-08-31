@@ -14,10 +14,6 @@ public class Flammable : MonoBehaviour
     private bool hasScoreBonus = true;
     Transform otherTransform;
 
-    // on collision 
-    // check Fire Tag
-    // is one ignited
-    //ignite the other
 
     void Start()
     {
@@ -32,7 +28,8 @@ public class Flammable : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        
+        if (isOnFire) return;
+
         if (other.gameObject.tag == "Fire")
         {
             
@@ -41,7 +38,7 @@ public class Flammable : MonoBehaviour
 
             if (otherFlammable.GetIsOnFire())
             {
-                otherTransform = otherFlammable.transform;
+                //otherTransform = otherFlammable.transform;
                 //Ignite();
                 Invoke("Ignite", igniteDelay);
             }
@@ -73,7 +70,6 @@ public class Flammable : MonoBehaviour
 
         AddToScore();
         
-
     }
 
     private void AddToScore()
@@ -81,6 +77,10 @@ public class Flammable : MonoBehaviour
         if (hasScoreBonus)
             ScoreManager.Instance.AddToScore(scoreBonus);
 
-        MischiefManager.Instance.AddPointsToMischief(mischieveContribution);
+        if(!isStartingOnFire)
+        {
+
+            MischiefManager.Instance.AddPointsToMischief(mischieveContribution);
+        }
     }
 }

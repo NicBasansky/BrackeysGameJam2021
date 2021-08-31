@@ -9,7 +9,6 @@ public class StartScreenUI : MonoBehaviour
 
     public void StartGame()
     {
-        //FMODUnity.RuntimeManager.LoadBank("Master Bank");
         if (FMODUnity.RuntimeManager.HasBankLoaded("Master"))
         {
             Debug.Log("Master Bank Loaded");
